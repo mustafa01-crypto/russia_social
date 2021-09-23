@@ -3,6 +3,7 @@ import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/pages/profile_tab/open_notifications.dart';
 import 'package:russia_social/pages/profile_tab/personal_information.dart';
 import 'package:russia_social/pages/profile_tab/social_networks.dart';
+import 'package:russia_social/pages/profile_tab/support.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -162,6 +163,37 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                             Text(
                               "Notifications",
+                              style: editProfileStyle,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 3.w,
+                        vertical: 2.2.h,
+                      ),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const Support()));
+                        },
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.contact_support_rounded,
+                              color: iconColor,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 5.w,
+                            ),
+                            Text(
+                              "Support",
                               style: editProfileStyle,
                             )
                           ],

@@ -71,7 +71,13 @@ TextStyle userNickName = GoogleFonts.roboto(
 );
 TextStyle textLabel = GoogleFonts.roboto(
   fontSize: 12.sp,
-  color: bodyDateColor,
+  color: titleColor,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle textLabelSupport = GoogleFonts.roboto(
+  fontSize: 12.sp,
+  color: titleColor,
   fontWeight: FontWeight.w400,
 );
 
