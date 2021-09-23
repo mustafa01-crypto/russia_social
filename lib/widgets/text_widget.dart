@@ -12,12 +12,49 @@ TextStyle titleStyle = GoogleFonts.roboto(
   fontWeight: FontWeight.w700,
 );
 
+TextStyle firstStyle = GoogleFonts.roboto(
+  letterSpacing: 0.9,
+  color: buttonLeft,
+  fontSize: 19.sp,
+  fontWeight: FontWeight.w400,
+);
+
+TextStyle secondStyle = GoogleFonts.roboto(
+  letterSpacing: 0.9,
+  color: iconColor,
+  fontSize: 19.sp,
+  fontWeight: FontWeight.w400,
+);
+
+TextStyle thirdStyle = GoogleFonts.roboto(
+  letterSpacing: 0.9,
+  color: titleColor,
+  fontSize: 19.sp,
+  fontWeight: FontWeight.w400,
+);
+
+TextStyle bodyTextStyle = GoogleFonts.roboto(
+  letterSpacing: 0.9,
+  height: 1.4,
+  color: bodyTitleColor,
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w400,
+);
+
 TextStyle bodyTitleStyle = GoogleFonts.roboto(
   color: bodyTitleColor,
   letterSpacing: 1.0,
   fontSize: 19.sp,
   fontWeight: FontWeight.w700,
 );
+
+TextStyle bodyFallowStyle = GoogleFonts.roboto(
+  color: bodyTitleColor,
+  letterSpacing: 1.0,
+  fontSize: 17.sp,
+  fontWeight: FontWeight.w500,
+);
+
 TextStyle bodyExplaining = GoogleFonts.roboto(
   color: bodyTitleColor,
   letterSpacing: 1.4,
@@ -31,6 +68,12 @@ TextStyle userNickName = GoogleFonts.roboto(
   fontSize: 12.sp,
   color: buttonLeft,
   fontWeight: FontWeight.w500,
+);
+
+TextStyle fallowNameStyle = GoogleFonts.roboto(
+  fontSize: 12.sp,
+  color: bodyTitleColor,
+  fontWeight: FontWeight.w400,
 );
 
 TextStyle buttonName = GoogleFonts.roboto(
