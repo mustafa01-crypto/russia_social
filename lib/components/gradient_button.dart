@@ -54,3 +54,37 @@ Widget socialButtons() {
         ),
       ));
 }
+
+Widget formBox(String text) {
+  return Container(
+    padding: EdgeInsets.only(left: 4.w),
+    width: 90.w,
+    height: 7.h,
+    alignment: Alignment.centerLeft,
+    decoration: BoxDecoration(
+      color: scaffoldBack,
+      borderRadius: BorderRadius.circular(10),
+    ),
+    child: TextFormField(
+      initialValue: text,
+      style: profileHintStyle,
+      decoration: const InputDecoration(
+        focusedBorder: InputBorder.none,
+        enabledBorder: InputBorder.none
+      ),
+    ),
+  );
+}
+
+Widget formLabel(String label){
+  return Padding(
+    padding:  EdgeInsets.only(left: 4.w),
+    child: Align(
+        alignment: Alignment.centerLeft,
+        child: Text(label,style: textLabel,)),
+  );
+}
+
+/*
+Text(text,style: profileHintStyle,)
+ */

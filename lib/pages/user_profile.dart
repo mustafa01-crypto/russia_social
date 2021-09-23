@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            profile("assets/badboy.jpg"),
+                            profile("assets/badboy.jpg",28.w, 14.h, 30),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [

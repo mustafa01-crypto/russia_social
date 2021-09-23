@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:russia_social/components/lists.dart';
 import 'package:russia_social/components/top_row_icons.dart';
+import 'package:russia_social/pages/personal_information.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -40,22 +40,69 @@ class _ProfilePageState extends State<ProfilePage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Column(
-                    children: List.generate(8, (index) => Padding(
-                      padding:  EdgeInsets.symmetric(
-                        horizontal: 3.w,vertical: 3.2.h,
+                  child: Column(children: [
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 3.w,
+                        vertical: 3.2.h,
                       ),
-                      child: Row(
-                        children: [
-                          editProfileIcons[index],
-                          SizedBox(
-                            width: 3.w,
-                          ),
-                          Text(editProfileNames[index],style: editProfileStyle,)
-                        ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const PersonalInformation()));
+                        },
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.person,
+                              color: iconColor,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 5.w,
+                            ),
+                            Text(
+                              "Personal Information",
+                              style: editProfileStyle,
+                            )
+                          ],
+                        ),
                       ),
-                    ),)
-                  ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 3.w,
+                      ),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const PersonalInformation()));
+                        },
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.share,
+                              color: iconColor,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 5.w,
+                            ),
+                            Text(
+                              "Social Networks",
+                              style: editProfileStyle,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ]),
                 ),
               ),
             ],

@@ -69,6 +69,11 @@ TextStyle userNickName = GoogleFonts.roboto(
   color: buttonLeft,
   fontWeight: FontWeight.w500,
 );
+TextStyle textLabel = GoogleFonts.roboto(
+  fontSize: 12.sp,
+  color: bodyDateColor,
+  fontWeight: FontWeight.w400,
+);
 
 TextStyle fallowNameStyle = GoogleFonts.roboto(
   fontSize: 12.sp,
@@ -79,6 +84,12 @@ TextStyle fallowNameStyle = GoogleFonts.roboto(
 TextStyle buttonName = GoogleFonts.roboto(
   fontSize: 12.sp,
   color: Colors.white,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle profileHintStyle = GoogleFonts.roboto(
+  fontSize: 12.sp,
+  color: titleColor,
   fontWeight: FontWeight.w500,
 );
 
