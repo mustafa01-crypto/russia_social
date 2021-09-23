@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../constants.dart';
+import '../widgets/constants.dart';
 import 'gradient_button.dart';
 import 'left_profile.dart';
 

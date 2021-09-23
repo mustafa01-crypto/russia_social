@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/components/top_row_icons.dart';
-import 'package:russia_social/constants.dart';
+import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 

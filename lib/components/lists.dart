@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import '../constants.dart';
+import '../widgets/constants.dart';
 
 List<Icon> icons = [
   Icon(

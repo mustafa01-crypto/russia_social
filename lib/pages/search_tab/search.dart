@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:russia_social/components/search_box.dart';
 import 'package:russia_social/components/top_row_icons.dart';
-import 'package:russia_social/constants.dart';
+import 'package:russia_social/widgets/constants.dart';
 import 'package:sizer/sizer.dart';
 
 class SearchPage extends StatefulWidget {

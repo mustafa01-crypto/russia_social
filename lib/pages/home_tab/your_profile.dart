@@ -7,7 +7,7 @@ import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../constants.dart';
+import '../../widgets/constants.dart';
 
 class YourProfile extends StatefulWidget {
   const YourProfile({Key? key}) : super(key: key);

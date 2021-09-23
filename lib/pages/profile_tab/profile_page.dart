@@ -5,7 +5,7 @@ import 'package:russia_social/pages/profile_tab/social_networks.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../constants.dart';
+import '../../widgets/constants.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);

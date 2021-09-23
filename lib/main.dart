@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:russia_social/tabs_page.dart';
+import 'package:russia_social/pages/tabs_page.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {

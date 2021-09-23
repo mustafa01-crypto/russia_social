@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../constants.dart';
+import '../widgets/constants.dart';
 
 Widget topRow(BuildContext context,String pageTitle,double width) {
   return  Row(
