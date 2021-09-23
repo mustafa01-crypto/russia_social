@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:global_bottom_navigation_bar/widgets/bottom_navigation_item.dart';
 import 'package:global_bottom_navigation_bar/widgets/scaffold_bottom_navigation.dart';
 import 'package:russia_social/widgets/constants.dart';
@@ -33,13 +34,13 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
 
   List<BottomNavigationItem> buildBottomNavigationItemList() => [
         BottomNavigationItem(
-          activeIcon: Icon(
-            Icons.source,
+          activeIcon: FaIcon(
+            FontAwesomeIcons.folder,
             color: buttonLeft,
             size: 21.sp,
           ),
-          inActiveIcon: Icon(
-            Icons.source,
+          inActiveIcon: FaIcon(
+            FontAwesomeIcons.folder,
             color: Colors.grey,
             size: 21.sp,
           ),

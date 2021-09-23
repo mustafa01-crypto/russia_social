@@ -38,6 +38,8 @@ dependencies:
   sizer: ^2.0.15
   google_fonts: ^2.1.0
   flutter_svg: ^0.22.0
+  font_awesome_flutter: ^9.1.0
+  like_button: ^2.0.3
 
 dev_dependencies:
   flutter_test:

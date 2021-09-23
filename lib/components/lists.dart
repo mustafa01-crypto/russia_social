@@ -1,27 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sizer/sizer.dart';
 
 import '../widgets/constants.dart';
 
-List<Icon> icons = [
-  Icon(
-    Icons.favorite_border,
+List<FaIcon> icons = [
+  FaIcon(
+    FontAwesomeIcons.heart,
     color: buttonLeft,
     size: 18.sp,
   ),
-  Icon(
-    Icons.emoji_emotions,
-    color: iconColor,
+  FaIcon(
+    FontAwesomeIcons.meh,
+    color: buttonLeft,
     size: 18.sp,
   ),
-  Icon(
-    Icons.notification_important_outlined,
-    color: iconColor,
+  FaIcon(
+    FontAwesomeIcons.heartBroken,
+    color: buttonLeft,
     size: 18.sp,
   ),
-  Icon(
-    Icons.chat_bubble_outline_outlined,
-    color: iconColor,
+  FaIcon(
+    FontAwesomeIcons.commentAlt,
+    color: buttonLeft,
     size: 18.sp,
   ),
 ];

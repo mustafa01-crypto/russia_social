@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:russia_social/components/falloers_info.dart';
 import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/components/left_profile.dart';
-import 'package:russia_social/components/lists.dart';
+import 'package:russia_social/components/like_button.dart';
 import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/pages/home_tab/your_profile.dart';
@@ -17,10 +18,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -36,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    topRow(context,"Previous page title",0),
+                    topRow(context, "Previous page title", 0),
                     IconButton(
                       icon: Icon(
                         Icons.more_horiz,
@@ -70,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            profile("assets/badboy.jpg",28.w, 14.h, 30),
+                            profile("assets/badboy.jpg", 28.w, 14.h, 30),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -246,26 +243,34 @@ class _HomeScreenState extends State<HomeScreen> {
                           bottom: 3.h,
                           child: Row(
                             children: [
-                              Row(
-                                children: List.generate(
-                                    4,
-                                    (index) => Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 3.w, vertical: 2.h),
-                                          child: Row(
-                                            children: [
-                                              icons[index],
-                                              SizedBox(
-                                                width: 1.w,
-                                              ),
-                                              Text(
-                                                "112",
-                                                style: userNickName,
-                                              )
-                                            ],
-                                          ),
-                                        )),
-                              )
+                              Row(children: [
+                                Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 3.w, vertical: 2.h),
+                                  child: Row(
+
+                                    children: [
+                                      buttonLike(
+                                        112,
+                                        FontAwesomeIcons.heart,
+                                      ),
+                                      buttonLike(
+                                        658,
+                                        FontAwesomeIcons.meh,
+                                      ),
+                                      buttonLike(
+                                        43,
+                                        FontAwesomeIcons.heartBroken,
+                                      ),
+                                      buttonLike(
+                                        1155,
+                                        FontAwesomeIcons.commentAlt,
+                                      ),
+
+                                    ],
+                                  ),
+                                )
+                              ])
                             ],
                           ),
                         )

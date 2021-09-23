@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:russia_social/components/falloers_info.dart';
 import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/components/left_profile.dart';
-import 'package:russia_social/components/lists.dart';
+import 'package:russia_social/components/like_button.dart';
 import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -228,25 +229,27 @@ class _YourProfileState extends State<YourProfile> {
                           child: Row(
                             children: [
                               Row(
-                                children: List.generate(
-                                    4,
-                                    (index) => Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 3.w, vertical: 2.h),
-                                          child: Row(
-                                            children: [
-                                              icons[index],
-                                              SizedBox(
-                                                width: 1.w,
-                                              ),
-                                              Text(
-                                                "112",
-                                                style: userNickName,
-                                              )
-                                            ],
-                                          ),
-                                        )),
-                              )
+
+                                children: [
+                                  buttonLike(
+                                    112,
+                                    FontAwesomeIcons.heart,
+                                  ),
+                                  buttonLike(
+                                    658,
+                                    FontAwesomeIcons.meh,
+                                  ),
+                                  buttonLike(
+                                    43,
+                                    FontAwesomeIcons.heartBroken,
+                                  ),
+                                  buttonLike(
+                                    1155,
+                                    FontAwesomeIcons.commentAlt,
+                                  ),
+
+                                ],
+                              ),
                             ],
                           ),
                         )
