@@ -96,6 +96,12 @@ TextStyle bodyEmailStyle = GoogleFonts.roboto(
   fontWeight: FontWeight.w400,
 );
 
+TextStyle editProfileStyle = GoogleFonts.roboto(
+  fontSize: 13.8.sp,
+  color: bodyTitleColor,
+  fontWeight: FontWeight.w500,
+);
+
 //Gradient
 
 LinearGradient buttonGradient = LinearGradient(
