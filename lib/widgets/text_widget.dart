@@ -81,6 +81,23 @@ TextStyle fallowNameStyle = GoogleFonts.roboto(
   fontWeight: FontWeight.w400,
 );
 
+TextStyle socialNetworkStyle = GoogleFonts.roboto(
+  fontSize: 12.sp,
+  color: bodyTitleColor,
+  fontWeight: FontWeight.w500,
+);
+TextStyle socialNetworkAddStyle = GoogleFonts.roboto(
+  fontSize: 12.sp,
+  color: buttonLeft,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle socialNetworkCancelStyle = GoogleFonts.roboto(
+  fontSize: 10.sp,
+  color: titleColor,
+  fontWeight: FontWeight.w400,
+);
+
 TextStyle buttonName = GoogleFonts.roboto(
   fontSize: 12.sp,
   color: Colors.white,

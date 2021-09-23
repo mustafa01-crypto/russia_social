@@ -14,14 +14,14 @@ class PersonalInformation extends StatefulWidget {
 }
 
 class _PersonalInformationState extends State<PersonalInformation> {
-  String dropdownvalue = 'Apple';
+  String dropdownvalue = 'Turkey';
   var items = [
-    'Apple',
-    'Banana',
-    'Grapes',
-    'Orange',
-    'watermelon',
-    'Pineapple'
+    'Turkey',
+    'United States',
+    'Greece',
+    'Germany',
+    'Frence',
+    'England'
   ];
 
   @override
@@ -69,7 +69,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                       SizedBox(
                         height: 1.h,
                       ),
-                      formBox("Peter"),
+                      formBox("Peter", profileHintStyle),
                       SizedBox(
                         height: 2.h,
                       ),
@@ -77,7 +77,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                       SizedBox(
                         height: 1.h,
                       ),
-                      formBox("Houel"),
+                      formBox("Houel", profileHintStyle),
                       SizedBox(
                         height: 2.h,
                       ),
@@ -85,7 +85,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                       SizedBox(
                         height: 1.h,
                       ),
-                      formBox("UXjdjaDJJ33J1XDAA"),
+                      formBox("UXjdjaDJJ33J1XDAA", profileHintStyle),
                       SizedBox(
                         height: 2.h,
                       ),
@@ -93,7 +93,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                       SizedBox(
                         height: 1.h,
                       ),
-                      formBox("peterhouel@gmail.com"),
+                      formBox("peterhouel@gmail.com", profileHintStyle),
                       SizedBox(
                         height: 2.h,
                       ),
@@ -137,7 +137,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                       SizedBox(
                         height: 1.h,
                       ),
-                      formBox("New York"),
+                      formBox("New York", profileHintStyle),
                       SizedBox(
                         height: 2.h,
                       ),
@@ -165,18 +165,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                       SizedBox(
                         height: 2.h,
                       ),
-                      Container(
-                        width: 90.w,
-                        height: 6.4.h,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: buttonLeft),
-                        child: Text(
-                          "Save",
-                          style: buttonName,
-                        ),
-                      ),
+                      orangeBox("Save")
                     ],
                   ),
                 ),

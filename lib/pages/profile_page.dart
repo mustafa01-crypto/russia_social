@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/pages/personal_information.dart';
+import 'package:russia_social/pages/social_networks.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -82,7 +83,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                  const PersonalInformation()));
+                                  const SocialNetworks()));
                         },
                         child: Row(
                           children: [

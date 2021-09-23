@@ -12,3 +12,5 @@ Color buttonColor = const Color(0xFFF5F3EF);
 
 Color dividerColor = const Color(0xFFF5F5F5);
 Color iconColor = const Color(0xFF9E9E9E);
+
+Color borderColor = const Color(0xFFE2DFDB);

@@ -55,7 +55,7 @@ Widget socialButtons() {
       ));
 }
 
-Widget formBox(String text) {
+Widget formBox(String text,TextStyle textStyle) {
   return Container(
     padding: EdgeInsets.only(left: 4.w),
     width: 90.w,
@@ -67,7 +67,7 @@ Widget formBox(String text) {
     ),
     child: TextFormField(
       initialValue: text,
-      style: profileHintStyle,
+      style: textStyle,
       decoration: const InputDecoration(
         focusedBorder: InputBorder.none,
         enabledBorder: InputBorder.none
@@ -85,6 +85,17 @@ Widget formLabel(String label){
   );
 }
 
-/*
-Text(text,style: profileHintStyle,)
- */
+Widget orangeBox(String name) {
+  return Container(
+    width: 90.w,
+    height: 6.4.h,
+    alignment: Alignment.center,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: buttonLeft),
+    child: Text(
+     name,
+      style: buttonName,
+    ),
+  );
+}
