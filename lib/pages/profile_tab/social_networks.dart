@@ -14,19 +14,6 @@ class SocialNetworks extends StatefulWidget {
 }
 
 class _SocialNetworksState extends State<SocialNetworks> {
-  List<String> assetSvg = [
-    "assets/svg/facebook.svg",
-    "assets/svg/twitter.svg",
-    "assets/svg/youtube.svg",
-    "assets/svg/instagram.svg",
-  ];
-
-  List<String> items = [
-    'Facebook',
-    'Twitter',
-    'Youtube',
-    'Instagram',
-  ];
   String dropdownvalue = 'Facebook';
 
   static final List<NewObject> itemsx = <NewObject>[
