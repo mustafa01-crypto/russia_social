@@ -5,7 +5,7 @@ import 'package:russia_social/components/left_profile.dart';
 import 'package:russia_social/components/lists.dart';
 import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/constants.dart';
-import 'package:russia_social/pages/your_profile.dart';
+import 'package:russia_social/pages/home_tab/your_profile.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 

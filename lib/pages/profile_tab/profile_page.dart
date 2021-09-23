@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:russia_social/components/top_row_icons.dart';
-import 'package:russia_social/pages/personal_information.dart';
-import 'package:russia_social/pages/social_networks.dart';
+import 'package:russia_social/pages/profile_tab/personal_information.dart';
+import 'package:russia_social/pages/profile_tab/social_networks.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../constants.dart';
+import '../../constants.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -67,6 +67,36 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                             Text(
                               "Personal Information",
+                              style: editProfileStyle,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 3.w,
+                      ),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const SocialNetworks()));
+                        },
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.share,
+                              color: iconColor,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 5.w,
+                            ),
+                            Text(
+                              "Social Networks",
                               style: editProfileStyle,
                             )
                           ],
