@@ -85,7 +85,7 @@ TextStyle buttonName = GoogleFonts.roboto(
 //Body
 
 TextStyle bodyDateStyle = GoogleFonts.roboto(
-  fontSize: 12.sp,
+  fontSize: 11.sp,
   color: bodyDateColor,
   fontWeight: FontWeight.w400,
 );
