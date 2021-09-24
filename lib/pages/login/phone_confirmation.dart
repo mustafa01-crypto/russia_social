@@ -15,11 +15,6 @@ class PhoneConfirmation extends StatefulWidget {
 }
 
 class _PhoneConfirmationState extends State<PhoneConfirmation> {
-
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -34,8 +29,18 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                 height: 3.7.h,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                  IconButton(
+                    icon: Icon(Icons.arrow_back_ios,color: buttonLeft,size: 18.sp,),
+
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                  ),
+                  SizedBox(
+                    width: 17.w,
+                  ),
                   appLogo(),
                 ],
               ),
@@ -108,9 +113,9 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                               color: scaffoldBack,
                               child: const Center(
                                   child: Text(
-                                    "",
-                                    style: TextStyle(color: Colors.black),
-                                  )),
+                                "",
+                                style: TextStyle(color: Colors.black),
+                              )),
                             ),
                             Container(
                               height: 18.66.w,
@@ -118,9 +123,9 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                               color: scaffoldBack,
                               child: const Center(
                                   child: Text(
-                                    "",
-                                    style: TextStyle(color: Colors.black),
-                                  )),
+                                "",
+                                style: TextStyle(color: Colors.black),
+                              )),
                             ),
                             Container(
                               height: 18.66.w,
@@ -128,9 +133,9 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                               color: scaffoldBack,
                               child: const Center(
                                   child: Text(
-                                    "",
-                                    style: TextStyle(color: Colors.black),
-                                  )),
+                                "",
+                                style: TextStyle(color: Colors.black),
+                              )),
                             ),
                           ],
                         ),
@@ -139,12 +144,11 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                         height: 4.h,
                       ),
                       GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                    const NewPassword()));
+                                    builder: (context) => const NewPassword()));
                           },
                           child: gradientLoginButton("Confirm")),
                       SizedBox(
@@ -167,7 +171,6 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                           ),
                         ],
                       ),
-
                     ],
                   ),
                 ),
