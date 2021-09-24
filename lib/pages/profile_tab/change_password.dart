@@ -22,16 +22,16 @@ class _ChangePasswordState extends State<ChangePassword> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-              height: 5.h,
+              height: 2.h,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                topRow(context, "Change Password", 5.w),
+                topRow(context, "Change Password", 9.w),
               ],
             ),
             SizedBox(
-              height: 0.3.h,
+              height: 1.h,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),

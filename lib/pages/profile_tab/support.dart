@@ -36,7 +36,7 @@ class _SupportState extends State<Support> {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                topRow(context, "Support", 21.w),
+                topRow(context, "Support", 25.w),
               ],
             ),
             SizedBox(

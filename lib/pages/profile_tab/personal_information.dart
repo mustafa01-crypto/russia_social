@@ -34,7 +34,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
-                height: 5.h,
+                height: 2.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -43,7 +43,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                 ],
               ),
               SizedBox(
-                height: 2.h,
+                height: 1.h,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),

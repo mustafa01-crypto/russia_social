@@ -1,181 +1,206 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 import 'constants.dart';
 
 //Titles
-TextStyle titleStyle = GoogleFonts.roboto(
-  letterSpacing: 1.0,
-  color: titleColor,
-  fontSize: 19.sp,
-  fontWeight: FontWeight.w600,
-);
+TextStyle titleStyle = TextStyle(
+    letterSpacing: 1.0,
+    color: titleColor,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle loginTitleStyle = GoogleFonts.roboto(
-  letterSpacing: 1.0,
-  color: titleColor,
-  fontSize: 34.sp,
-  fontWeight: FontWeight.w500,
-);
+TextStyle loginTitleStyle = TextStyle(
+    letterSpacing: 1.0,
+    color: titleColor,
+    fontSize: 34.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle loginForgotTitleStyle = GoogleFonts.roboto(
-  letterSpacing: 1.0,
-  color: titleColor,
-  fontSize: 25.sp,
-  fontWeight: FontWeight.w500,
-);
+TextStyle loginForgotTitleStyle = TextStyle(
+    letterSpacing: 1.0,
+    color: titleColor,
+    fontSize: 25.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle newPasswordStyle = GoogleFonts.roboto(
-  letterSpacing: 1.0,
-  color: titleColor,
-  fontSize: 30.sp,
-  fontWeight: FontWeight.w500,
-);
+TextStyle newPasswordStyle = TextStyle(
+    letterSpacing: 1.0,
+    color: titleColor,
+    fontSize: 30.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle firstStyle = GoogleFonts.roboto(
-  letterSpacing: 0.9,
-  color: buttonLeft,
-  fontSize: 19.sp,
-  fontWeight: FontWeight.w400,
-);
+TextStyle firstStyle = TextStyle(
+    letterSpacing: 0.9,
+    color: buttonLeft,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle secondStyle = GoogleFonts.roboto(
-  letterSpacing: 0.9,
-  color: iconColor,
-  fontSize: 19.sp,
-  fontWeight: FontWeight.w400,
-);
+TextStyle secondStyle = TextStyle(
+    letterSpacing: 0.9,
+    color: iconColor,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle thirdStyle = GoogleFonts.roboto(
-  letterSpacing: 0.9,
-  color: titleColor,
-  fontSize: 19.sp,
-  fontWeight: FontWeight.w400,
-);
+TextStyle thirdStyle = TextStyle(
+    letterSpacing: 0.9,
+    color: titleColor,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle bodyTextStyle = GoogleFonts.roboto(
-  letterSpacing: 0.9,
-  height: 1.4,
-  color: bodyTitleColor,
-  fontSize: 12.sp,
-  fontWeight: FontWeight.w400,
-);
+TextStyle bodyTextStyle = TextStyle(
+    letterSpacing: 0.9,
+    height: 1.4,
+    color: bodyTitleColor,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle bodyTitleStyle = GoogleFonts.roboto(
-  color: bodyTitleColor,
-  letterSpacing: 1.0,
-  fontSize: 19.sp,
-  fontWeight: FontWeight.w700,
-);
+TextStyle bodyTitleStyle = TextStyle(
+    color: bodyTitleColor,
+    letterSpacing: 1.0,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle bodyFallowStyle = GoogleFonts.roboto(
-  color: bodyTitleColor,
-  letterSpacing: 1.0,
-  fontSize: 17.sp,
-  fontWeight: FontWeight.w500,
-);
+TextStyle bodyFallowStyle = TextStyle(
+    color: bodyTitleColor,
+    letterSpacing: 1.0,
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle bodyExplaining = GoogleFonts.roboto(
-  color: bodyTitleColor,
-  letterSpacing: 1.4,
-  fontSize: 19.sp,
-  fontWeight: FontWeight.w400,
-);
+TextStyle bodyExplaining = TextStyle(
+    color: bodyTitleColor,
+    letterSpacing: 1.4,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
 //Littles
 
-TextStyle userNickName = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: buttonLeft,
-  fontWeight: FontWeight.w500,
-);
-TextStyle textLabel = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: bodyDateColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle userNickName = TextStyle(
+    fontSize: 12.sp,
+    color: buttonLeft,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+TextStyle textLabel = TextStyle(
+    fontSize: 12.sp,
+    color: bodyDateColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle textLabelSupport = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: titleColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle textLabelSupport = TextStyle(
+    fontSize: 12.sp,
+    color: titleColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle fallowNameStyle = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: bodyTitleColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle fallowNameStyle = TextStyle(
+    fontSize: 12.sp,
+    color: bodyTitleColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle socialNetworkStyle = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: bodyTitleColor,
-  fontWeight: FontWeight.w500,
-);
-TextStyle socialNetworkAddStyle = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: buttonLeft,
-  fontWeight: FontWeight.w500,
-);
+TextStyle socialNetworkStyle = TextStyle(
+    fontSize: 12.sp,
+    color: bodyTitleColor,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+TextStyle socialNetworkAddStyle = TextStyle(
+    fontSize: 12.sp,
+    color: buttonLeft,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle socialNetworkCancelStyle = GoogleFonts.roboto(
-  fontSize: 10.sp,
-  color: titleColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle socialNetworkCancelStyle = TextStyle(
+    fontSize: 10.sp,
+    color: titleColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle buttonName = GoogleFonts.roboto(
-  fontSize: 14.sp,
-  color: Colors.white,
-  fontWeight: FontWeight.w500,
-);
+TextStyle buttonName = TextStyle(
+    fontSize: 14.sp,
+    color: Colors.white,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle profileHintStyle = GoogleFonts.roboto(
-  fontSize: 12.sp,
-  color: titleColor,
-  fontWeight: FontWeight.w500,
-);
+TextStyle profileHintStyle = TextStyle(
+    fontSize: 12.sp,
+    color: titleColor,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
 //Body
 
-TextStyle bodyDateStyle = GoogleFonts.roboto(
-  fontSize: 11.sp,
-  color: bodyDateColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle bodyDateStyle = TextStyle(
+    fontSize: 11.sp,
+    color: bodyDateColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle forgotPasswordStyle = GoogleFonts.roboto(
-  fontSize: 11.4.sp,
-  letterSpacing: 1.1,
-  color: bodyTitleColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle forgotPasswordStyle = TextStyle(
+    fontSize: 11.4.sp,
+    letterSpacing: 1,
+    color: bodyTitleColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle forgotPasswordBlackStyle = GoogleFonts.roboto(
-  fontSize: 11.4.sp,
-  letterSpacing: 1.1,
-  color: Colors.black,
-  fontWeight: FontWeight.w400,
-);
+TextStyle forgotPasswordBlackStyle = TextStyle(
+    fontSize: 11.4.sp,
+    letterSpacing: 1,
+    color: Colors.black,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle bodyEmailStyle = GoogleFonts.roboto(
-  fontSize: 13.2.sp,
-  color: bodyTitleColor,
-  fontWeight: FontWeight.w400,
-);
+TextStyle bodyEmailStyle = TextStyle(
+    fontSize: 13.2.sp,
+    color: bodyTitleColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle editProfileStyle = GoogleFonts.roboto(
-  fontSize: 13.8.sp,
-  color: bodyTitleColor,
-  fontWeight: FontWeight.w500,
-);
+TextStyle editProfileStyle = TextStyle(
+    fontSize: 13.8.sp,
+    color: bodyTitleColor,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
-TextStyle editProfileOrangeStyle = GoogleFonts.roboto(
-  fontSize: 13.8.sp,
-  color: buttonLeft,
-  fontWeight: FontWeight.w500,
-);
+TextStyle editProfileOrangeStyle = TextStyle(
+    fontSize: 13.8.sp,
+    color: buttonLeft,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
 
 //Gradient
 

@@ -25,16 +25,16 @@ class _OpenNotificationState extends State<OpenNotification> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-              height: 5.h,
+              height: 2.h,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                topRow(context, "Notifications", 5.w),
+                topRow(context, "Notifications", 16.w),
               ],
             ),
             SizedBox(
-              height: 3.h,
+              height: 1.h,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),

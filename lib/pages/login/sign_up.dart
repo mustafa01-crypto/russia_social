@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:russia_social/components/app_logo.dart';
 import 'package:russia_social/components/gradient_button.dart';
+import 'package:russia_social/pages/login/sign_in.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -141,9 +142,17 @@ class _SignUpState extends State<SignUp> {
                     "Already have an account? ",
                     style: textLabelSupport,
                   ),
-                  Text(
-                    "Login in",
-                    style: socialNetworkAddStyle,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignIn()));
+                    },
+                    child: Text(
+                      "Login in",
+                      style: socialNetworkAddStyle,
+                    ),
                   ),
                 ],
               ),

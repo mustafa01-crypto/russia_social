@@ -45,16 +45,16 @@ class _SocialNetworksState extends State<SocialNetworks> {
           child: Column(
             children: [
               SizedBox(
-                height: 3.h,
+                height: 2.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  topRow(context, "Social Networks", 5.w),
+                  topRow(context, "Social Networks", 12.w),
                 ],
               ),
               SizedBox(
-                height: 0.3.h,
+                height: 1.h,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),

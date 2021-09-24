@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:russia_social/pages/login/sign_in.dart';
+import 'package:russia_social/widgets/constants.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -10,7 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
 
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
+          unselectedWidgetColor: buttonLeft,
           primarySwatch: Colors.blue,
         ),
         home: const SignIn(),

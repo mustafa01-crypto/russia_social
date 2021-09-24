@@ -36,7 +36,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   global_bottom_navigation_bar: ^0.0.8
   sizer: ^2.0.15
-  google_fonts: ^2.1.0
   flutter_svg: ^0.22.0
   font_awesome_flutter: ^9.1.0
   like_button: ^2.0.3
@@ -81,11 +80,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  #fonts:
-  #  - family: Graphic
-   #   fonts:
-   #     - asset: fonts/GraphikLCG-Regular.ttf
-   #       style: normal
+  fonts:
+    - family: Graphik
+      fonts:
+        - asset: assets/fonts/graphik.otf
+          style: normal
    #       weight: 400
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

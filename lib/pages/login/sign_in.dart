@@ -3,6 +3,7 @@ import 'package:russia_social/components/app_logo.dart';
 import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/pages/login/forgot_password.dart';
 import 'package:russia_social/pages/login/sign_up.dart';
+import 'package:russia_social/pages/tabs_page.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -86,7 +87,7 @@ class _SignInState extends State<SignIn> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const SignUp()));
+                                      builder: (context) => const TabsPage()));
                             },
                             child: gradientLoginButton("Sign In")),
                         SizedBox(
@@ -121,14 +122,15 @@ class _SignInState extends State<SignIn> {
                 "or sign up with:",
                 style: bodyDateStyle,
               ),
-              SizedBox(
-                height: 2.h,
-              ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   socialLoginButtons(),
                 ],
+              ),
+              SizedBox(
+                height: 1.h,
               ),
               GestureDetector(
                 onTap: (){
@@ -152,9 +154,17 @@ class _SignInState extends State<SignIn> {
                     "No Account? ",
                     style: textLabelSupport,
                   ),
-                  Text(
-                    "Sign Up",
-                    style: socialNetworkAddStyle,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignUp()));
+                    },
+                    child: Text(
+                      "Sign Up",
+                      style: socialNetworkAddStyle,
+                    ),
                   ),
                 ],
               ),
