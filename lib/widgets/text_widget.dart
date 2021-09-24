@@ -101,6 +101,7 @@ TextStyle userNickName = TextStyle(
     fontWeight: FontWeight.w500,
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
+
 TextStyle textLabel = TextStyle(
     fontSize: 12.sp,
     color: bodyDateColor,
@@ -215,3 +216,6 @@ final Shader textShader = LinearGradient(
 ).createShader(
   const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0),
 );
+final Shader linearGradient = const LinearGradient(
+  colors: <Color>[Color(0xFFE1E1DF),Color(0xFFFFFFFF), ],
+).createShader(const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));

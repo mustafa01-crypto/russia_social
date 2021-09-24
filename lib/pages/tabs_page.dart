@@ -5,7 +5,7 @@ import 'package:global_bottom_navigation_bar/widgets/scaffold_bottom_navigation.
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/pages/add_page.dart';
 import 'package:russia_social/pages/home_tab/user_profile.dart';
-import 'package:russia_social/pages/notification_page.dart';
+import 'package:russia_social/pages/notification_page/notification_page.dart';
 import 'package:russia_social/pages/profile_tab/profile_page.dart';
 import 'package:russia_social/pages/search_tab/search.dart';
 import 'package:sizer/sizer.dart';

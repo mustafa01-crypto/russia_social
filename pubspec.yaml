@@ -39,7 +39,7 @@ dependencies:
   flutter_svg: ^0.22.0
   font_awesome_flutter: ^9.1.0
   like_button: ^2.0.3
-  numeric_keyboard: ^1.1.0
+  simple_gradient_text: ^1.2.2
 
 dev_dependencies:
   flutter_test:
