@@ -43,12 +43,12 @@ class _SupportState extends State<Support> {
               height: 1.2.h,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
+              padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
               child: Container(
                 width: 100.w,
                 height: 85.6.h,
                 decoration: BoxDecoration(
-                    color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                    color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

@@ -55,9 +55,24 @@ Widget socialButtons() {
       ));
 }
 
+Widget socialLoginButtons() {
+  return Row(
+      children: List.generate(
+        3,
+            (index) => Padding(
+          padding: EdgeInsets.symmetric(
+              horizontal: 2.w, vertical: 2.h),
+          child: SizedBox(
+              width: 9.w,
+              height:9.w,
+              child: SvgPicture.asset(assetSvgLogin[index])),
+        ),
+      ));
+}
+
 Widget formBox(String text,TextStyle textStyle) {
   return Container(
-    padding: EdgeInsets.only(left: 4.w),
+    padding: EdgeInsets.only(left: 5.33.w),
     width: 86.66.w,
     height: 8.39.h,
     alignment: Alignment.centerLeft,
@@ -95,6 +110,22 @@ Widget orangeBox(String name) {
         color: buttonLeft),
     child: Text(
      name,
+      style: buttonName,
+    ),
+  );
+}
+
+
+Widget gradientLoginButton(String title) {
+  return Container(
+    width: 86.66.w,
+    height: 8.39.h,
+    alignment: Alignment.center,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(7),
+        gradient: buttonGradient),
+    child: Text(
+      title,
       style: buttonName,
     ),
   );

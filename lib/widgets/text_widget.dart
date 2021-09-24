@@ -9,7 +9,28 @@ TextStyle titleStyle = GoogleFonts.roboto(
   letterSpacing: 1.0,
   color: titleColor,
   fontSize: 19.sp,
-  fontWeight: FontWeight.w700,
+  fontWeight: FontWeight.w600,
+);
+
+TextStyle loginTitleStyle = GoogleFonts.roboto(
+  letterSpacing: 1.0,
+  color: titleColor,
+  fontSize: 34.sp,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle loginForgotTitleStyle = GoogleFonts.roboto(
+  letterSpacing: 1.0,
+  color: titleColor,
+  fontSize: 25.sp,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle newPasswordStyle = GoogleFonts.roboto(
+  letterSpacing: 1.0,
+  color: titleColor,
+  fontSize: 30.sp,
+  fontWeight: FontWeight.w500,
 );
 
 TextStyle firstStyle = GoogleFonts.roboto(
@@ -121,6 +142,20 @@ TextStyle profileHintStyle = GoogleFonts.roboto(
 TextStyle bodyDateStyle = GoogleFonts.roboto(
   fontSize: 11.sp,
   color: bodyDateColor,
+  fontWeight: FontWeight.w400,
+);
+
+TextStyle forgotPasswordStyle = GoogleFonts.roboto(
+  fontSize: 11.4.sp,
+  letterSpacing: 1.1,
+  color: bodyTitleColor,
+  fontWeight: FontWeight.w400,
+);
+
+TextStyle forgotPasswordBlackStyle = GoogleFonts.roboto(
+  fontSize: 11.4.sp,
+  letterSpacing: 1.1,
+  color: Colors.black,
   fontWeight: FontWeight.w400,
 );
 
