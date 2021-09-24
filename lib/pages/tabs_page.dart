@@ -37,12 +37,12 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
           activeIcon: FaIcon(
             FontAwesomeIcons.folder,
             color: buttonLeft,
-            size: 21.sp,
+            size: 24.sp,
           ),
           inActiveIcon: FaIcon(
             FontAwesomeIcons.folder,
             color: Colors.grey,
-            size: 21.sp,
+            size: 24.sp,
           ),
           title: 'favorite',
           color: Colors.white,
@@ -52,12 +52,12 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
           activeIcon: Icon(
             Icons.search_outlined,
             color: buttonLeft,
-            size: 21.sp,
+            size: 24.sp,
           ),
           inActiveIcon: Icon(
             Icons.search_outlined,
             color: Colors.grey,
-            size: 21.sp,
+            size: 24.sp,
           ),
           title: 'notifications',
           color: Colors.white,
@@ -67,12 +67,12 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
           activeIcon: Icon(
             Icons.add,
             color: buttonLeft,
-            size: 21.sp,
+            size: 24.sp,
           ),
           inActiveIcon: Icon(
             Icons.add,
             color: Colors.grey,
-            size: 21.sp,
+            size: 24.sp,
           ),
           title: 'more',
           color: Colors.white,
@@ -82,12 +82,12 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
           activeIcon: Icon(
             Icons.notifications_none,
             color: buttonLeft,
-            size: 21.sp,
+            size: 24.sp,
           ),
           inActiveIcon: Icon(
             Icons.notifications_none,
             color: Colors.grey,
-            size: 21.sp,
+            size: 24.sp,
           ),
           title: 'explore',
           color: Colors.white,
@@ -97,12 +97,12 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
           activeIcon: Icon(
             Icons.person_outline,
             color: buttonLeft,
-            size: 21.sp,
+            size: 24.sp,
           ),
           inActiveIcon: Icon(
             Icons.person_outline,
             color: Colors.grey,
-            size: 21.sp,
+            size: 24.sp,
           ),
           title: 'learn',
           color: Colors.white,

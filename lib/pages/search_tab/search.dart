@@ -33,11 +33,15 @@ class _SearchPageState extends State<SearchPage> {
                   topRow(context, "Followers", 22.w),
                 ],
               ),
+              SizedBox(
+                height: 3.h,
+              ),
               Form(
                 key: key,
                 child: Container(
-                  height: 42,
-                  margin: const EdgeInsets.fromLTRB(16, 16, 16, 16),
+                  height: 6.89.h,
+                  width: 94.66.w,
+                  alignment: Alignment.centerLeft,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
@@ -65,6 +69,9 @@ class _SearchPageState extends State<SearchPage> {
                     },
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 1.h,
               ),
               searchBox("assets/badboy.jpg"),
               searchBox("assets/angel.jpg"),

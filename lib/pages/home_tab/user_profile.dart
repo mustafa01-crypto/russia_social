@@ -50,10 +50,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),
+                  padding: EdgeInsets.symmetric(horizontal:2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
-                    height: 61.h,
+                    height: 66.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(15)),
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(left: 2.w),
+                          padding: EdgeInsets.only(left: 3.w,top: 1.h),
                           child: Text(
                             "petterrollllins@gmail.com",
                             style: bodyEmailStyle,
@@ -153,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 fallowInfo(),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),
+                  padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
                     height: 70.h,
@@ -266,6 +266,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                         1155,
                                         FontAwesomeIcons.commentAlt,
                                       ),
+                                      SizedBox(
+                                        width: 2.w,
+                                      ),
+                                      FaIcon(
+                                        FontAwesomeIcons.longArrowAltRight,
+                                        color: buttonLeft,
+                                        size: 18.sp,
+
+                                      )
 
                                     ],
                                   ),

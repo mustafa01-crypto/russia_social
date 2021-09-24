@@ -8,8 +8,8 @@ import 'lists.dart';
 
 Widget gradientButton(String title) {
   return Container(
-    width: 54.w,
-    height: 5.h,
+    width: 54.66.w,
+    height: 6.14.h,
     alignment: Alignment.center,
     decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(7),
@@ -23,8 +23,8 @@ Widget gradientButton(String title) {
 
 Widget gradientTextButton(String title) {
   return Container(
-    width: 54.w,
-    height: 5.h,
+    width: 54.66.w,
+    height: 6.14.h,
     alignment: Alignment.center,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(7),
@@ -48,8 +48,8 @@ Widget socialButtons() {
           padding: EdgeInsets.symmetric(
               horizontal: 2.w, vertical: 2.h),
           child: SizedBox(
-              width: 10.w,
-              height: 10.w,
+              width: 11.2.w,
+              height: 11.2.w,
               child: SvgPicture.asset(assetSvg[index])),
         ),
       ));
@@ -58,8 +58,8 @@ Widget socialButtons() {
 Widget formBox(String text,TextStyle textStyle) {
   return Container(
     padding: EdgeInsets.only(left: 4.w),
-    width: 90.w,
-    height: 7.h,
+    width: 86.66.w,
+    height: 8.39.h,
     alignment: Alignment.centerLeft,
     decoration: BoxDecoration(
       color: scaffoldBack,
@@ -87,8 +87,8 @@ Widget formLabel(String label){
 
 Widget orangeBox(String name) {
   return Container(
-    width: 90.w,
-    height: 6.4.h,
+    width: 86.66.w,
+    height: 8.69.h,
     alignment: Alignment.center,
     decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),

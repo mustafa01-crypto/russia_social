@@ -6,10 +6,10 @@ import 'lists.dart';
 
 Widget fallowInfo() {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),
+    padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
     child: Container(
       width: 100.w,
-      height: 15.h,
+      height: 13.33.h,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15)),

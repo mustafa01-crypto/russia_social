@@ -106,8 +106,8 @@ class _SocialNetworksState extends State<SocialNetworks> {
                                     child: Row(
                                       children: [
                                         SizedBox(
-                                          width: 8.w,
-                                          height: 8.w,
+                                          width: 6.16.w,
+                                          height: 6.16.w,
                                           child: SvgPicture.asset(
                                             itemsx.icon,
                                             fit: BoxFit.cover,
@@ -213,8 +213,8 @@ class _SocialNetworksState extends State<SocialNetworks> {
                                   width: 1.w,
                                 ),
                                 SizedBox(
-                                    width: 4.w,
-                                    height: 4.w,
+                                    width: 4.56.w,
+                                    height: 4.56.w,
                                     child: SvgPicture.asset(
                                       "assets/svg/facebook.svg",
                                       fit: BoxFit.cover,

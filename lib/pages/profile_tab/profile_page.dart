@@ -36,7 +36,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
+                padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                 child: Container(
                   width: 100.w,
                   height: 76.h,
@@ -45,10 +45,12 @@ class _ProfilePageState extends State<ProfilePage> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(children: [
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
                     Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 3.w,
-                        vertical: 2.2.h,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -76,10 +78,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
                     Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 3.w,
-                        vertical: 2.2.h,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -107,10 +111,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
                     Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 3.w,
-                        vertical: 2.2.h,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -138,10 +144,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
                     Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 3.w,
-                        vertical: 2.2.h,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -169,10 +177,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
                     Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 3.w,
-                        vertical: 2.2.h,
                       ),
                       child: GestureDetector(
                         onTap: () {

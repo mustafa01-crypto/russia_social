@@ -9,7 +9,7 @@ Widget buttonLike(int like,IconData fontIcons) {
   return Padding(
     padding:  EdgeInsets.only(left: 4.w),
     child: LikeButton(
-      size: 24.sp,
+      size: 21.sp,
       circleColor:
        CircleColor(start: buttonLeft, end: buttonRight),
       bubblesColor:  BubblesColor(
