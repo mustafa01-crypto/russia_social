@@ -31,16 +31,16 @@ class _ChangePasswordState extends State<ChangePassword> {
               ],
             ),
             SizedBox(
-              height: 3.h,
+              height: 0.3.h,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
               child: Container(
                 width: 100.w,
-                height: 50.h,
+                height: 56.67.h,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(5.33.w),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,

@@ -8,12 +8,12 @@ import 'left_profile.dart';
 
 Widget searchBox(String path) {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),
+    padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
     child: Container(
       width: 100.w,
       height: 18.h,
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(15)),
+          color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -25,6 +25,9 @@ Widget searchBox(String path) {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               profile(path, 28.w, 14.h, 30),
+              SizedBox(
+                width: 2.w,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

@@ -37,17 +37,18 @@ class _OpenNotificationState extends State<OpenNotification> {
               height: 3.h,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
+              padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
               child: Container(
                 width: 100.w,
-                height: 18.h,
+                height: 21.43.h,
                 decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20)),
+                    borderRadius: BorderRadius.circular(5.33.w)),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 3.h,
+                      height: 5.4.h,
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 4.w),
@@ -77,7 +78,7 @@ class _OpenNotificationState extends State<OpenNotification> {
                       ),
                     ),
                     SizedBox(
-                      height: 2.h,
+                      height: 0.1.h,
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 4.w),
@@ -107,7 +108,10 @@ class _OpenNotificationState extends State<OpenNotification> {
                           ),
                         ],
                       ),
-                    )
+                    ),
+                    SizedBox(
+                      height: 5.4.h,
+                    ),
                   ],
                 ),
               ),

@@ -63,7 +63,7 @@ Widget formBox(String text,TextStyle textStyle) {
     alignment: Alignment.centerLeft,
     decoration: BoxDecoration(
       color: scaffoldBack,
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(2.66.w),
     ),
     child: TextFormField(
       initialValue: text,
@@ -91,7 +91,7 @@ Widget orangeBox(String name) {
     height: 8.69.h,
     alignment: Alignment.center,
     decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(1.86.w),
         color: buttonLeft),
     child: Text(
      name,

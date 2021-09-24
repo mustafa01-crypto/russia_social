@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 66.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(15)),
+                        borderRadius: BorderRadius.circular(5.33.w)),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -159,7 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 70.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(25)),
+                        borderRadius: BorderRadius.circular(5.33.w)),
                     child: Stack(
                       children: [
                         Container(

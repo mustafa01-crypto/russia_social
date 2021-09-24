@@ -95,12 +95,12 @@ class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
         ),
         BottomNavigationItem(
           activeIcon: Icon(
-            Icons.person_outline,
+            Icons.person,
             color: buttonLeft,
             size: 24.sp,
           ),
           inActiveIcon: Icon(
-            Icons.person_outline,
+            Icons.person,
             color: Colors.grey,
             size: 24.sp,
           ),

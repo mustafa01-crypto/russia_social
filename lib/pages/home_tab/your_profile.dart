@@ -33,19 +33,19 @@ class _YourProfileState extends State<YourProfile> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    SizedBox(width: 4.w,),
+                    SizedBox(width: 1.w,),
                     topRow(context,"Previous page title",0),
 
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),
+                  padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
                     height: 61.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(15)),
+                        borderRadius: BorderRadius.circular(5.33.w)),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -138,13 +138,13 @@ class _YourProfileState extends State<YourProfile> {
                 ),
                 fallowInfo(),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),
+                  padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
                     height: 70.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(25)),
+                        borderRadius: BorderRadius.circular(5.33.w)),
                     child: Stack(
                       children: [
                         Container(

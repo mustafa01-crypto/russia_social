@@ -42,73 +42,76 @@ class _PersonalInformationState extends State<PersonalInformation> {
                   topRow(context, "Personal Information", 5.w),
                 ],
               ),
+              SizedBox(
+                height: 2.h,
+              ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
+                padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                 child: Container(
                   width: 100.w,
-                  height: 144.h,
+                  height: 169.86.h,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(5.33.w),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
-                      profile("assets/brad.jpg", 40.w, 24.h, 30),
+                      profile("assets/brad.jpg", 48.w, 30.h, 30),
                       Text(
                         "Edit Avatar",
                         style: userNickName,
                       ),
                       SizedBox(
-                        height: 3.h,
+                        height: 3.3.h,
                       ),
                       formLabel("First Name"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       formBox("Peter", profileHintStyle),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formLabel("Last Name"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       formBox("Houel", profileHintStyle),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formLabel("Login"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       formBox("UXjdjaDJJ33J1XDAA", profileHintStyle),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formLabel("Email"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       formBox("peterhouel@gmail.com", profileHintStyle),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formLabel("Country"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       Container(
                         padding: EdgeInsets.only(left: 4.w,right: 2.w),
-                        width: 90.w,
-                        height: 7.h,
+                        width: 86.66.w,
+                        height: 8.39.h,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
                           color: scaffoldBack,
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(2.66.w),
                         ),
                         child: DropdownButtonHideUnderline(
                           child: DropdownButton(
@@ -131,24 +134,24 @@ class _PersonalInformationState extends State<PersonalInformation> {
                         ),
                       ),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formLabel("City"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       formBox("New York", profileHintStyle),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formLabel("About"),
                       SizedBox(
-                        height: 1.h,
+                        height: 1.6.h,
                       ),
                       Container(
                         padding: EdgeInsets.only(left: 4.w),
                         width: 90.w,
-                        height: 25.h,
+                        height: 22.63.h,
                         alignment: Alignment.topLeft,
                         decoration: BoxDecoration(
                           color: scaffoldBack,
@@ -163,7 +166,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                         ),
                       ),
                       SizedBox(
-                        height: 2.h,
+                        height: 4.h,
                       ),
                       orangeBox("Save")
                     ],

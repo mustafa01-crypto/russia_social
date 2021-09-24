@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/pages/profile_tab/open_notifications.dart';
 import 'package:russia_social/pages/profile_tab/personal_information.dart';
@@ -35,14 +36,17 @@ class _ProfilePageState extends State<ProfilePage> {
                   topRow(context, "Edit Profile", 20.w),
                 ],
               ),
+              SizedBox(
+                height: 3.h,
+              ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                 child: Container(
                   width: 100.w,
-                  height: 76.h,
+                  height: 72.h,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(5.33.w),
                   ),
                   child: Column(children: [
                     SizedBox(
@@ -50,7 +54,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 3.w,
+                        horizontal: 6.06.w,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -68,7 +72,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               size: 18.sp,
                             ),
                             SizedBox(
-                              width: 5.w,
+                              width: 4.w,
                             ),
                             Text(
                               "Personal Information",
@@ -83,7 +87,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 3.w,
+                        horizontal: 6.06.w,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -101,7 +105,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               size: 18.sp,
                             ),
                             SizedBox(
-                              width: 5.w,
+                              width: 4.w,
                             ),
                             Text(
                               "Social Networks",
@@ -116,7 +120,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 3.w,
+                        horizontal: 6.06.w,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -134,7 +138,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               size: 18.sp,
                             ),
                             SizedBox(
-                              width: 5.w,
+                              width: 4.w,
                             ),
                             Text(
                               "Change Password",
@@ -149,7 +153,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 3.w,
+                        horizontal: 6.06.w,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -167,7 +171,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               size: 18.sp,
                             ),
                             SizedBox(
-                              width: 5.w,
+                              width: 4.w,
                             ),
                             Text(
                               "Notifications",
@@ -182,7 +186,37 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 3.w,
+                        horizontal: 6.06.w,
+                      ),
+                      child: GestureDetector(
+                        onTap: () {
+
+                          //Language Page
+                        },
+                        child: Row(
+                          children: [
+                            FaIcon(
+                              FontAwesomeIcons.language,
+                              color: iconColor,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 4.w,
+                            ),
+                            Text(
+                              "Language",
+                              style: editProfileStyle,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 6.06.w,
                       ),
                       child: GestureDetector(
                         onTap: () {
@@ -200,11 +234,71 @@ class _ProfilePageState extends State<ProfilePage> {
                               size: 18.sp,
                             ),
                             SizedBox(
-                              width: 5.w,
+                              width: 4.w,
                             ),
                             Text(
                               "Support",
                               style: editProfileStyle,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 6.06.w,
+                      ),
+                      child: GestureDetector(
+                        onTap: () {
+                         //Delete Account
+                        },
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.delete,
+                              color: buttonLeft,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 4.w,
+                            ),
+                            Text(
+                              "Delete Account",
+                              style: editProfileOrangeStyle,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5.39.h,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 6.06.w,
+                      ),
+                      child: GestureDetector(
+                        onTap: () {
+
+                          //Exit to App
+
+                        },
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.exit_to_app,
+                              color: buttonLeft,
+                              size: 18.sp,
+                            ),
+                            SizedBox(
+                              width: 4.w,
+                            ),
+                            Text(
+                              "Log out",
+                              style: editProfileOrangeStyle,
                             )
                           ],
                         ),

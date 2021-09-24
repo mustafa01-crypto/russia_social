@@ -3,7 +3,7 @@ import 'package:sizer/sizer.dart';
 
 Widget profile(String path,double width,double height,double radius) {
   return Padding(
-    padding: EdgeInsets.only(left: 4.w, right: 2.w),
+    padding: EdgeInsets.only(left: 3.w, right: 2.w),
     child: Container(
       width: width,
       height:height,

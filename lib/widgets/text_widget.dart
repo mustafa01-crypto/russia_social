@@ -71,8 +71,8 @@ TextStyle userNickName = GoogleFonts.roboto(
 );
 TextStyle textLabel = GoogleFonts.roboto(
   fontSize: 12.sp,
-  color: titleColor,
-  fontWeight: FontWeight.w500,
+  color: bodyDateColor,
+  fontWeight: FontWeight.w400,
 );
 
 TextStyle textLabelSupport = GoogleFonts.roboto(
@@ -105,7 +105,7 @@ TextStyle socialNetworkCancelStyle = GoogleFonts.roboto(
 );
 
 TextStyle buttonName = GoogleFonts.roboto(
-  fontSize: 12.sp,
+  fontSize: 14.sp,
   color: Colors.white,
   fontWeight: FontWeight.w500,
 );
@@ -133,6 +133,12 @@ TextStyle bodyEmailStyle = GoogleFonts.roboto(
 TextStyle editProfileStyle = GoogleFonts.roboto(
   fontSize: 13.8.sp,
   color: bodyTitleColor,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle editProfileOrangeStyle = GoogleFonts.roboto(
+  fontSize: 13.8.sp,
+  color: buttonLeft,
   fontWeight: FontWeight.w500,
 );
 

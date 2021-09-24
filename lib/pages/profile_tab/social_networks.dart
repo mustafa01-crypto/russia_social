@@ -45,7 +45,7 @@ class _SocialNetworksState extends State<SocialNetworks> {
           child: Column(
             children: [
               SizedBox(
-                height: 5.h,
+                height: 3.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -54,22 +54,22 @@ class _SocialNetworksState extends State<SocialNetworks> {
                 ],
               ),
               SizedBox(
-                height: 3.h,
+                height: 0.3.h,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
+                padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                 child: Container(
                   width: 100.w,
-                  height: 70.h,
+                  height: 87.25.h,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(5.33.w),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 4.w),
@@ -85,12 +85,12 @@ class _SocialNetworksState extends State<SocialNetworks> {
                         padding: EdgeInsets.symmetric(vertical: 2.h),
                         child: Container(
                           padding: EdgeInsets.only(left: 4.w, right: 2.w),
-                          width: 90.w,
-                          height: 7.h,
+                          width: 86.66.w,
+                          height: 8.39.h,
                           alignment: Alignment.centerLeft,
                           decoration: BoxDecoration(
                             color: scaffoldBack,
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(1.86.w),
                           ),
                           child: DropdownButtonHideUnderline(
                             child: DropdownButton<NewObject>(
@@ -151,12 +151,12 @@ class _SocialNetworksState extends State<SocialNetworks> {
                           children: [
                             Container(
                               padding: EdgeInsets.only(left: 4.w),
-                              width: 75.w,
-                              height: 7.h,
+                              width: 76.8.w,
+                              height: 8.39.h,
                               alignment: Alignment.centerLeft,
                               decoration: BoxDecoration(
                                 color: scaffoldBack,
-                                borderRadius: BorderRadius.circular(10),
+                                borderRadius: BorderRadius.circular(1.86.w),
                               ),
                               child: TextFormField(
                                 initialValue: "Enter a Nickname",
@@ -178,7 +178,7 @@ class _SocialNetworksState extends State<SocialNetworks> {
                       ),
                       formBox("Url Adress", textLabel),
                       SizedBox(
-                        height: 3.h,
+                        height: 3.5.h,
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 4.w),
@@ -190,7 +190,7 @@ class _SocialNetworksState extends State<SocialNetworks> {
                             )),
                       ),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -199,7 +199,7 @@ class _SocialNetworksState extends State<SocialNetworks> {
                             width: 5.w,
                           ),
                           Container(
-                            width: 33.7.w,
+                            width: 34.66.w,
                             height: 5.h,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(7),
@@ -238,11 +238,11 @@ class _SocialNetworksState extends State<SocialNetworks> {
                             ),
                           ),
                           SizedBox(
-                            width: 5.w,
+                            width: 5.54.w,
                           ),
                           Container(
-                            width: 33.7.w,
-                            height: 5.h,
+                            width: 34.66.w,
+                            height: 5.54.h,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(7),
                                 border: Border.all(color: borderColor),
@@ -291,11 +291,11 @@ class _SocialNetworksState extends State<SocialNetworks> {
                             )),
                       ),
                       SizedBox(
-                        height: 2.h,
+                        height: 2.8.h,
                       ),
                       formBox("Url Adress", textLabel),
                       SizedBox(
-                        height: 3.h,
+                        height: 3.5.h,
                       ),
                       orangeBox("Save")
                     ],
