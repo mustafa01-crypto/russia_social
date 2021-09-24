@@ -28,7 +28,7 @@ class _YourProfileState extends State<YourProfile> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 0.5.h,
+                  height: 2.h,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -37,6 +37,9 @@ class _YourProfileState extends State<YourProfile> {
                     topRow(context,"Previous page title",0),
 
                   ],
+                ),
+                SizedBox(
+                  height: 1.h,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),

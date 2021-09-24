@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 0.5.h,
+                  height: 2.h,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -48,6 +48,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                     ),
                   ],
+                ),
+                SizedBox(
+                  height: 1.h,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal:2.66.w, vertical: 1.h),

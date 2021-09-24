@@ -40,7 +40,7 @@ class _SupportState extends State<Support> {
               ],
             ),
             SizedBox(
-              height: 1.2.h,
+              height: 1.h,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),

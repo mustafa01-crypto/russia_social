@@ -25,7 +25,7 @@ class _SearchPageState extends State<SearchPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
-                height: 1.h,
+                height: 2.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -34,7 +34,7 @@ class _SearchPageState extends State<SearchPage> {
                 ],
               ),
               SizedBox(
-                height: 3.h,
+                height: 1.h,
               ),
               Form(
                 key: key,
