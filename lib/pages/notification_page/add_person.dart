@@ -99,7 +99,7 @@ class _AddPersonState extends State<AddPerson> {
                         MaterialPageRoute(
                             builder: (context) => const AddAccount()));
                   },
-                    child: gradientLoginButton("Add Person", 92.w, 7.94.h)),
+                    child: gradientLoginButton("Add Person", 92.w, 7.39.h)),
               ),
               SizedBox(
                 height: 3.h,

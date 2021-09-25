@@ -106,7 +106,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                       const PhoneConfirmation()));
                         },
                         child: gradientLoginButton("Send",86.66.w,
-                          8.39.h,)),
+                          7.39.h,)),
                   ],
                 ),
               ),

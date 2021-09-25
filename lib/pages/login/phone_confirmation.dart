@@ -150,7 +150,7 @@ class _PhoneConfirmationState extends State<PhoneConfirmation> {
                                 MaterialPageRoute(
                                     builder: (context) => const NewPassword()));
                           },
-                          child: gradientLoginButton("Confirm",86.66.w, 8.39.h)),
+                          child: gradientLoginButton("Confirm",86.66.w, 7.39.h)),
                       SizedBox(
                         height: 25.h,
                       ),

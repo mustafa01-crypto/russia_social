@@ -89,7 +89,7 @@ class _SignInState extends State<SignIn> {
                                   MaterialPageRoute(
                                       builder: (context) => const TabsPage()));
                             },
-                            child: gradientLoginButton("Sign In",86.66.w, 8.39.h)),
+                            child: gradientLoginButton("Sign In",86.66.w, 7.39.h)),
                         SizedBox(
                           height: 2.h,
                         ),
