@@ -11,7 +11,7 @@ Widget addPersonBox(String number,String name,String ulke) {
     padding: EdgeInsets.only(left: 4.w),
     child: Container(
       width: 92.w,
-      height: 34.93.h,
+      height: 36.93.h,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(5.33.w),
