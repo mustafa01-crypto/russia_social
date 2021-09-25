@@ -3,7 +3,6 @@ import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:sizer/sizer.dart';
-
 import 'left_profile.dart';
 
 Widget notificationBox(String path){

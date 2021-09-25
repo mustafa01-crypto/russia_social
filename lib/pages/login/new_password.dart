@@ -88,7 +88,7 @@ class _NewPasswordState extends State<NewPassword> {
                     SizedBox(
                       height: 4.h,
                     ),
-                    gradientLoginButton("Save"),
+                    gradientLoginButton("Save",86.66.w, 8.39.h,),
 
                   ],
                 ),

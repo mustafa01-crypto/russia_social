@@ -89,7 +89,7 @@ class _SignUpState extends State<SignUp> {
                       SizedBox(
                         height: 2.h,
                       ),
-                      gradientLoginButton("Sign Up"),
+                      gradientLoginButton("Sign Up",86.66.w, 8.39.h),
                       SizedBox(
                         height: 2.h,
                       ),

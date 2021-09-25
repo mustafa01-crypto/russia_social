@@ -40,6 +40,14 @@ List<String> assetSvgLogin = [
 
 ];
 
+List<String> assetSvgAdd = [
+  "assets/svg/snapchat.svg",
+  "assets/svg/facebook_add.svg",
+  "assets/svg/instagram_add.svg",
+
+];
+
+
 List<String> fallow = ["453", "32", "9321", "78"];
 List<String> fallowName = ["Feedbacks", "Comments", "Followers", "Following"];
 

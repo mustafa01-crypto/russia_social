@@ -250,6 +250,15 @@ class _YourProfileState extends State<YourProfile> {
                                     1155,
                                     FontAwesomeIcons.commentAlt,
                                   ),
+                                  SizedBox(
+                                    width: 8.w,
+                                  ),
+                                  FaIcon(
+                                    FontAwesomeIcons.longArrowAltRight,
+                                    color: buttonLeft,
+                                    size: 18.sp,
+
+                                  )
 
                                 ],
                               ),

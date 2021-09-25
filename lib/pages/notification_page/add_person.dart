@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:russia_social/components/add_person_box.dart';
 import 'package:russia_social/components/app_logo.dart';
-import 'package:russia_social/components/notification_profile.dart';
+import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-import 'add_person.dart';
+import 'add_account.dart';
 
-class NotificationPage extends StatefulWidget {
-  const NotificationPage({Key? key}) : super(key: key);
+class AddPerson extends StatefulWidget {
+  const AddPerson({Key? key}) : super(key: key);
 
   @override
-  _NotificationPageState createState() => _NotificationPageState();
+  _AddPersonState createState() => _AddPersonState();
 }
 
-class _NotificationPageState extends State<NotificationPage> {
+class _AddPersonState extends State<AddPerson> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+      child: Scaffold(
         backgroundColor: scaffoldBack,
         body: SingleChildScrollView(
           child: Column(
@@ -37,8 +38,16 @@ class _NotificationPageState extends State<NotificationPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        SizedBox(),
-                        SizedBox(),
+                        IconButton(
+                          icon: Icon(
+                            Icons.arrow_back_ios,
+                            color: buttonLeft,
+                            size: 21.sp,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
                         appLogo(),
                         IconButton(
                           icon: Icon(
@@ -46,12 +55,7 @@ class _NotificationPageState extends State<NotificationPage> {
                             color: buttonLeft,
                             size: 21.sp,
                           ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const AddPerson()));
-                          },
+                          onPressed: () {},
                         ),
                       ],
                     ),
@@ -72,57 +76,50 @@ class _NotificationPageState extends State<NotificationPage> {
                 ),
               ),
               SizedBox(
-                height: 2.h,
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    notificationTracks("01"),
-                    notificationTracks("02"),
-                    notificationTracks("03"),
-                    notificationTracks("04"),
-                  ],
-                ),
+                height: 1.h,
               ),
               Padding(
-                padding: EdgeInsets.only(top: 2.h, right: 3.w),
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: FaIcon(
-                    FontAwesomeIcons.longArrowAltRight,
-                    color: buttonLeft,
-                    size: 18.sp,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 2.h,
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 4.w),
+                padding: EdgeInsets.only(left: 4.w, right: 4.w),
                 child: Text(
-                  "Notifications",
-                  style: titleStyle,
+                  "Add information about person and we "
+                  "will inform you if  a story about him"
+                  " appears on our website",
+                  style: addTrackAccountStyle,
                 ),
               ),
               SizedBox(
-                height: 2.h,
+                height: 1.h,
               ),
-              notificationBox("assets/rocky.jpg"),
+              Align(
+                alignment: Alignment.center,
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const AddAccount()));
+                  },
+                    child: gradientLoginButton("Add Person", 92.w, 7.94.h)),
+              ),
+              SizedBox(
+                height: 3.h,
+              ),
+              addPersonBox("01", "Mustafa yıldız", "Türkiye Ankara"),
               SizedBox(
                 height: 2.h,
               ),
-              notificationBox("assets/brad.jpg"),
+              addPersonBox("02", "Ali Koç", "Azerbaycan Bakü"),
               SizedBox(
                 height: 2.h,
               ),
-              notificationBox("assets/angel.jpg"),
+              addPersonBox("03", "Ayşe Teyze", "Danimarka Kopenhag"),
               SizedBox(
                 height: 2.h,
               ),
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

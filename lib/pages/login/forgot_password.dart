@@ -105,7 +105,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                   builder: (context) =>
                                       const PhoneConfirmation()));
                         },
-                        child: gradientLoginButton("Send")),
+                        child: gradientLoginButton("Send",86.66.w,
+                          8.39.h,)),
                   ],
                 ),
               ),

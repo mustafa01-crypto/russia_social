@@ -109,6 +109,14 @@ TextStyle textLabel = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle addTrackAccountStyle = TextStyle(
+  height: 1.7,
+    fontSize: 12.sp,
+    color: Colors.black,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
 TextStyle textLabelSupport = TextStyle(
     fontSize: 12.sp,
     color: titleColor,

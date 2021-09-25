@@ -270,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         FontAwesomeIcons.commentAlt,
                                       ),
                                       SizedBox(
-                                        width: 2.w,
+                                        width: 8.w,
                                       ),
                                       FaIcon(
                                         FontAwesomeIcons.longArrowAltRight,
