@@ -30,13 +30,13 @@ List<String> assetSvg = [
   "assets/svg/youtube.svg",
   "assets/svg/facebook.svg",
   "assets/svg/twitter.svg",
-  "assets/svg/instagram.svg",
+  "assets/svg/instagram_add.svg",
 ];
 
 List<String> assetSvgLogin = [
   "assets/svg/apple.svg",
   "assets/svg/facebook.svg",
-  "assets/svg/google-plus.svg",
+  "assets/svg/glass.svg",
 
 ];
 
