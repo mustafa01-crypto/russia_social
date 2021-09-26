@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:global_bottom_navigation_bar/widgets/bottom_navigation_item.dart';
 import 'package:global_bottom_navigation_bar/widgets/scaffold_bottom_navigation.dart';
+import 'package:russia_social/pages/search_tab/search_tab.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/pages/add_page.dart';
 import 'package:russia_social/pages/home_tab/user_profile.dart';
 import 'package:russia_social/pages/notification_page/notification_page.dart';
 import 'package:russia_social/pages/profile_tab/profile_page.dart';
-import 'package:russia_social/pages/search_tab/search.dart';
 import 'package:sizer/sizer.dart';
 
 class TabsPage extends StatefulWidget {
@@ -18,12 +19,19 @@ class TabsPage extends StatefulWidget {
 }
 
 class _TabsPageState extends State<TabsPage> with TickerProviderStateMixin {
+
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: []);
+  }
   @override
   Widget build(BuildContext context) {
     return ScaffoldGlobalBottomNavigation(
       listOfChild: const [
         HomeScreen(),
-        SearchPage(),
+        SearchGlobal(),
         AddPage(),
         NotificationPage(),
         ProfilePage(),

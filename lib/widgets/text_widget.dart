@@ -20,6 +20,14 @@ TextStyle loginTitleStyle = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle globalSearchTitle = TextStyle(
+    letterSpacing: 1.0,
+    color: bodyTitleColor,
+    fontSize: 30.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
 TextStyle loginForgotTitleStyle = TextStyle(
     letterSpacing: 1.0,
     color: titleColor,
@@ -207,6 +215,13 @@ TextStyle editProfileStyle = TextStyle(
 TextStyle editProfileOrangeStyle = TextStyle(
     fontSize: 13.8.sp,
     color: buttonLeft,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle addTagStyle = TextStyle(
+    fontSize: 10.6.sp,
+    color: bodyDateColor,
     fontWeight: FontWeight.w500,
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);

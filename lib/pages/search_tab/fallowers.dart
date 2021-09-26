@@ -4,14 +4,14 @@ import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:sizer/sizer.dart';
 
-class SearchPage extends StatefulWidget {
-  const SearchPage({Key? key}) : super(key: key);
+class Fallowers extends StatefulWidget {
+  const Fallowers({Key? key}) : super(key: key);
 
   @override
-  _SearchPageState createState() => _SearchPageState();
+  _FallowersState createState() => _FallowersState();
 }
 
-class _SearchPageState extends State<SearchPage> {
+class _FallowersState extends State<Fallowers> {
   TextEditingController t1 = TextEditingController();
   final key = GlobalKey<FormFieldState>();
 

@@ -15,6 +15,7 @@ Color iconColor = const Color(0xFF9E9E9E);
 Color iconColor2 = const Color(0xFFCBC6BF);
 
 Color borderColor = const Color(0xFFE2DFDB);
+Color borderColor2 = const Color(0xFFE9E6E3);
 
 Color switchColor = const Color(0xFFD6D2CC);
 Color switchColor2 = const Color(0xFFF3F2F0);
