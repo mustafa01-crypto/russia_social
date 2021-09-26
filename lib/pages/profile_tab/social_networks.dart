@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:russia_social/components/gradient_button.dart';
+import 'package:russia_social/components/lists.dart';
+import 'package:russia_social/components/social_row.dart';
 import 'package:russia_social/components/top_row_icons.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
@@ -16,24 +18,6 @@ class SocialNetworks extends StatefulWidget {
 class _SocialNetworksState extends State<SocialNetworks> {
   String dropdownvalue = 'Facebook';
 
-  static final List<NewObject> itemsx = <NewObject>[
-    NewObject(
-      'Facebook',
-      "assets/svg/facebook.svg",
-    ),
-    NewObject(
-      'Twitter',
-      "assets/svg/twitter.svg",
-    ),
-    NewObject(
-      'Youtube',
-      "assets/svg/youtube.svg",
-    ),
-    NewObject(
-      'Instagram',
-      "assets/svg/instagram.svg",
-    ),
-  ];
   NewObject value = itemsx.first;
 
   @override
@@ -192,95 +176,7 @@ class _SocialNetworksState extends State<SocialNetworks> {
                       SizedBox(
                         height: 2.8.h,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            width: 5.w,
-                          ),
-                          Container(
-                            width: 34.66.w,
-                            height: 5.h,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(7),
-                                border: Border.all(color: borderColor),
-                                color: Colors.white),
-                            child: Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.center,
-                              children: [
-                                SizedBox(
-                                  width: 1.w,
-                                ),
-                                SizedBox(
-                                    width: 4.56.w,
-                                    height: 4.56.w,
-                                    child: SvgPicture.asset(
-                                      "assets/svg/facebook.svg",
-                                      fit: BoxFit.cover,
-                                    )),
-                                SizedBox(
-                                  width: 1.4.w,
-                                ),
-                                Text(
-                                  "Facebook",
-                                  style: socialNetworkCancelStyle,
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.cancel,
-                                    color: iconColor,
-                                    size: 12.sp,
-                                  ),
-                                  onPressed: () {},
-                                )
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            width: 5.54.w,
-                          ),
-                          Container(
-                            width: 34.66.w,
-                            height: 5.54.h,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(7),
-                                border: Border.all(color: borderColor),
-                                color: Colors.white),
-                            child: Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.center,
-                              children: [
-                                SizedBox(
-                                  width: 1.w,
-                                ),
-                                SizedBox(
-                                    width: 4.w,
-                                    height: 4.w,
-                                    child: SvgPicture.asset(
-                                      "assets/svg/youtube.svg",
-                                      fit: BoxFit.cover,
-                                    )),
-                                SizedBox(
-                                  width: 1.4.w,
-                                ),
-                                Text(
-                                  "Youtube",
-                                  style: socialNetworkCancelStyle,
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.cancel,
-                                    color: buttonLeft,
-                                    size: 12.sp,
-                                  ),
-                                  onPressed: () {},
-                                )
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+                      socialRow(),
                       Padding(
                         padding: EdgeInsets.only(left: 4.w,top: 3.h),
                         child: Align(
@@ -310,9 +206,3 @@ class _SocialNetworksState extends State<SocialNetworks> {
   }
 }
 
-class NewObject {
-  final String title;
-  final String icon;
-
-  NewObject(this.title, this.icon);
-}

@@ -104,3 +104,60 @@ List<Icon> editProfileIcons = [
     size: 18.sp,
   ),
 ];
+
+List<String> countries = [
+  "America",
+  "England",
+  "Turkey",
+  "Netherland",
+  "Russiaa",
+  "Greecea",
+  "Germaany",
+  "Brazial",
+  "Canadaa",
+  "Ameraica",
+  "Englaand",
+  "Turkaey",
+  "Neatherland",
+  "Russia",
+  "Graeece",
+  "Germaany",
+  "Braazil",
+  "Caanada",
+  "America",
+  "England",
+  "Turkey",
+  "Netherland",
+  "Russia",
+  "Greece",
+  "Germany",
+  "Brazil",
+  "Canada",
+];
+
+ final List<NewObject> itemsx = <NewObject>[
+  NewObject(
+    'Facebook',
+    "assets/svg/facebook.svg",
+  ),
+  NewObject(
+    'Twitter',
+    "assets/svg/twitter.svg",
+  ),
+  NewObject(
+    'Youtube',
+    "assets/svg/youtube.svg",
+  ),
+  NewObject(
+    'Instagram',
+    "assets/svg/instagram.svg",
+  ),
+];
+
+class NewObject {
+  final String title;
+  final String icon;
+
+  NewObject(this.title, this.icon);
+}
+

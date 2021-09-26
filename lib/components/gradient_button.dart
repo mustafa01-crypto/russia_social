@@ -141,3 +141,36 @@ Widget gradientLoginButton(String title,double width,double height) {
     ),
   );
 }
+
+Widget bottomSheetForm(String title) {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 4.w),
+    child: Container(
+      padding: EdgeInsets.symmetric(horizontal: 5.33.w),
+      width: 100.w,
+      height: 8.39.h,
+      alignment: Alignment.centerLeft,
+      decoration: BoxDecoration(
+        color: scaffoldBack,
+        borderRadius: BorderRadius.circular(2.66.w),
+      ),
+      child: TextFormField(
+        initialValue: title,
+        style: textLabel,
+        decoration: InputDecoration(
+            focusedBorder: InputBorder.none,
+            enabledBorder: InputBorder.none,
+            suffixIcon: IconButton(
+              onPressed: () {
+                // Add Tag
+              },
+              icon: Icon(
+                Icons.add,
+                color: buttonLeft,
+                size: 18.sp,
+              ),
+            )),
+      ),
+    ),
+  );
+}
