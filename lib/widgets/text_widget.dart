@@ -12,6 +12,14 @@ TextStyle titleStyle = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle addTitleStyle = TextStyle(
+    letterSpacing: 0.8,
+    color: titleColor,
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
 TextStyle loginTitleStyle = TextStyle(
     letterSpacing: 1.0,
     color: titleColor,
@@ -72,6 +80,14 @@ TextStyle bodyTextStyle = TextStyle(
     letterSpacing: 0.9,
     height: 1.4,
     color: bodyTitleColor,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle bodyAddComment = TextStyle(
+    letterSpacing: 0.9,
+    color: iconColor,
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Graphic',
@@ -166,10 +182,24 @@ TextStyle buttonName = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle moreButtonName = TextStyle(
+    fontSize: 9.sp,
+    color: Colors.white,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
 TextStyle profileHintStyle = TextStyle(
     fontSize: 12.sp,
     color: titleColor,
     fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle profileAddStyle = TextStyle(
+    fontSize: 12.sp,
+    color: titleColor,
+    fontWeight: FontWeight.w600,
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
@@ -202,6 +232,13 @@ TextStyle bodyEmailStyle = TextStyle(
     fontSize: 13.2.sp,
     color: bodyTitleColor,
     fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle bodyCommentTitle = TextStyle(
+    fontSize: 13.2.sp,
+    color: titleColor,
+    fontWeight: FontWeight.w600,
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 

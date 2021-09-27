@@ -141,6 +141,19 @@ Widget gradientLoginButton(String title,double width,double height) {
     ),
   );
 }
+Widget gradientAddButton(String title,double width,double height) {
+  return Container(
+    width:width,
+    height: height,
+    alignment: Alignment.center,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(7), gradient: buttonGradient),
+    child: Text(
+      title,
+      style: moreButtonName,
+    ),
+  );
+}
 
 Widget bottomSheetForm(String title) {
   return Padding(
