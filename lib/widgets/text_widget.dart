@@ -242,6 +242,14 @@ TextStyle bodyCommentTitle = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle bodyMenuItems = TextStyle(
+    fontSize: 15.2.sp,
+    color: titleColor,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+
 TextStyle editProfileStyle = TextStyle(
     fontSize: 13.8.sp,
     color: bodyTitleColor,

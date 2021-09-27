@@ -68,3 +68,75 @@ Widget searchBox(String path) {
     ),
   );
 }
+
+
+
+Widget searchTopBox(String path,String name,String country,String followers) {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
+    child: Container(
+      width: 100.w,
+      height: 20.63.h,
+      decoration: BoxDecoration(
+          color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            height: 2.h,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              profile(path, 28.w, 14.h, 30),
+              SizedBox(
+                width: 2.w,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    name,
+                    style: bodyTitleStyle,
+                  ),
+                  SizedBox(
+                    height: 1.w,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Icon(
+                        Icons.location_on,
+                        color: bodyDateColor,
+                        size: 13.sp,
+                      ),
+                      SizedBox(
+                        width: 1.w,
+                      ),
+                      Text(
+                       country,
+                        style: bodyDateStyle,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 2.h,
+                  ),
+                  Text(
+                    followers,
+                    style: profileAddStyle,
+                  ),
+                  SizedBox(
+                    height: 2.h,
+                  ),
+                  gradientLoginButton("+ Subscribe",57.66.w,4.6.h)
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
+    ),
+  );
+}
