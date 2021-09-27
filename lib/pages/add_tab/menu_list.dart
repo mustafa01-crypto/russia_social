@@ -5,6 +5,7 @@ import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
+import 'all_feedbacks.dart';
 import 'last_comments.dart';
 
 class AddMenu extends StatefulWidget {
@@ -65,7 +66,7 @@ class _AddMenuState extends State<AddMenu> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const AddMenu()));
+                          builder: (context) => const AllFeedbacks()));
                 },
                   child: Text(
                 "All feedbacks",
