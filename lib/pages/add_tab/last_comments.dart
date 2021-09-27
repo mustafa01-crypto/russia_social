@@ -87,23 +87,23 @@ class _LastCommentsState extends State<LastComments> {
               SizedBox(
                 height: 3.h,
               ),
-              columnCommentBox(),
+              columnCommentBox("Any time of year is a great time "),
               SizedBox(
                 height: 2.h,
               ),
-              columnCommentBox(),
+              columnCommentBox("True story, comeback  "),
               SizedBox(
                 height: 2.h,
               ),
-              columnCommentBox(),
+              columnCommentBox("True story, comeback  "),
               SizedBox(
                 height: 3.h,
               ),
-              columnCommentBox(),
+              columnCommentBox("This is love"),
               SizedBox(
                 height: 3.h,
               ),
-              columnCommentBox(),
+              columnCommentBox("Burası Türkiye"),
               SizedBox(
                 height: 3.h,
               ),

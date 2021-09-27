@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
@@ -6,17 +7,17 @@ import 'package:sizer/sizer.dart';
 
 import 'gradient_button.dart';
 
-Widget rowSubscribeBox(String path,String name,String followers) {
+Widget rowSubscribeBox(String path, String name, String followers) {
   return Padding(
     padding: EdgeInsets.only(left: 4.w),
     child: Stack(
       children: [
+
         Container(
           width: 46.w,
           height: 27.h,
           decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(5.33.w)),
+              color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
           child: Column(
             children: [
               Padding(
@@ -30,8 +31,7 @@ Widget rowSubscribeBox(String path,String name,String followers) {
                   child: CircleAvatar(
                     radius: 12.w,
                     backgroundColor: Colors.white,
-                    backgroundImage: const AssetImage(
-                        "assets/angel.jpg"),
+                    backgroundImage: const AssetImage("assets/angel.jpg"),
                   ),
                 ),
               ),
@@ -59,18 +59,30 @@ Widget rowSubscribeBox(String path,String name,String followers) {
         Positioned(
           left: 0,
           right: 0,
-          top: 1.w,
-          child: Container(
-            width: 5.w,
-            height: 3.h,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
+          child: SizedBox(
+            width: 4.w,
+            height: 2.h,
+            child: Container(
+              color: scaffoldBack,
             ),
-            child: CircleAvatar(
-              radius: 4.w,
-              backgroundColor: Colors.white,
-              backgroundImage:
-              const AssetImage("assets/angel.jpg"),
+          ),
+        ),
+        Positioned(
+          left: 0,
+          right: 0,
+          top: 0.4.w,
+          child: Container(
+            width: 8.w,
+            height: 8.w,
+            decoration:  BoxDecoration(
+              border: Border.all(
+                color: Colors.white,
+                width: 3
+              ),
+              shape: BoxShape.circle,
+              image: const DecorationImage(
+                image: AssetImage("assets/angel.jpg",)
+              )
             ),
           ),
         ),
@@ -79,15 +91,18 @@ Widget rowSubscribeBox(String path,String name,String followers) {
   );
 }
 
-Widget rowCommentBox(String title) {
+
+
+Widget rowCommentBox(
+  String title,
+) {
   return Padding(
-    padding:  EdgeInsets.only(left: 2.66.w),
+    padding: EdgeInsets.only(left: 2.66.w),
     child: Container(
       width: 75.2.w,
       height: 24.h,
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(5.33.w)),
+          color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -95,7 +110,7 @@ Widget rowCommentBox(String title) {
             height: 2.h,
           ),
           Padding(
-            padding:  EdgeInsets.only(left: 4.w),
+            padding: EdgeInsets.only(left: 4.w),
             child: Text(
               title,
               style: bodyCommentTitle,
@@ -105,11 +120,11 @@ Widget rowCommentBox(String title) {
             height: 3.h,
           ),
           Padding(
-            padding:  EdgeInsets.only(left: 4.w,right: 2.w),
+            padding: EdgeInsets.only(left: 4.w, right: 2.w),
             child: Text(
               "Whether you’re crossing "
-                  "the George Washington Bridge into "
-                  "the Heights, riding the Metro",
+              "the George Washington Bridge into "
+              "the Heights, riding the Metro",
               style: bodyAddComment,
             ),
           )
@@ -119,15 +134,14 @@ Widget rowCommentBox(String title) {
   );
 }
 
-Widget columnCommentBox() {
+Widget columnCommentBox(String text) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 2.66.w),
     child: Container(
       width: 100.w,
       height: 23.h,
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(5.33.w)),
+          color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -135,12 +149,11 @@ Widget columnCommentBox() {
             height: 2.h,
           ),
           Padding(
-            padding: EdgeInsets.only(left: 2.w, right: 3.w),
-            child: Text(
-              "^^",
-              style: firstStyle,
-            ),
-          ),
+              padding: EdgeInsets.only(left: 2.w, right: 3.w),
+              child: SizedBox(
+                  width: 12.w,
+                  height: 2.3.h,
+                  child: SvgPicture.asset("assets/svg/quote.svg"))),
           SizedBox(
             height: 2.h,
           ),
@@ -148,9 +161,9 @@ Widget columnCommentBox() {
             padding: EdgeInsets.only(left: 2.w, right: 3.w),
             child: Text(
               "It is not a fact that the"
-                  " approximate structure of marketing "
-                  "research positions "
-                  "the branded media mix...",
+              " approximate structure of marketing "
+              "research positions "
+              "the branded media mix...",
               style: bodyEmailStyle,
             ),
           ),
@@ -162,7 +175,7 @@ Widget columnCommentBox() {
             child: Row(
               children: [
                 Text(
-                  "Any time of year is a great time ",
+                  text,
                   style: socialNetworkAddStyle,
                 ),
                 SizedBox(
