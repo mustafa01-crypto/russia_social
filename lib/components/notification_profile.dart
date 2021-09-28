@@ -165,3 +165,42 @@ Widget notificationTracks(String number) {
     ),
   );
 }
+
+
+Widget messageBox(String path,TextStyle style){
+  return Padding(
+    padding:  EdgeInsets.symmetric(horizontal: 2.66.w),
+    child: Container(
+      width: 94.66.w,
+      height: 11.59.h,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(5.33.w)
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          profile(path, 18.w, 18.w, 27),
+          SizedBox(width: 2.w,),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text("Peter Rollins",style: socialNetworkStyle,),
+
+                  Text("12:01 pm",style: bodyDateStyle,)
+                ],
+              ),
+              SizedBox(
+                height: 0.7.h,
+              ),
+              Text("Hi, i`m Peter. And I Introvert...",style: style,),
+            ],
+          )
+        ],
+      ),
+    ),
+  );
+}

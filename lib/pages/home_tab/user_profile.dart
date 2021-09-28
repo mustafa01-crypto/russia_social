@@ -4,6 +4,7 @@ import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/components/left_profile.dart';
 import 'package:russia_social/components/shared_post.dart';
 import 'package:russia_social/components/top_row_icons.dart';
+import 'package:russia_social/pages/messages/all_friends.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/pages/home_tab/your_profile.dart';
 import 'package:russia_social/widgets/text_widget.dart';
@@ -52,7 +53,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 1.h,
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal:2.66.w, vertical: 1.h),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
                     height: 66.h,
@@ -98,7 +100,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                 SizedBox(
                                   height: 2.h,
                                 ),
-                                gradientTextButton("Message")
+                                GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const AllFriends()));
+                                    },
+                                    child: gradientTextButton("Message"))
                               ],
                             )
                           ],
@@ -142,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(left: 3.w,top: 1.h),
+                          padding: EdgeInsets.only(left: 3.w, top: 1.h),
                           child: Text(
                             "petterrollllins@gmail.com",
                             style: bodyEmailStyle,
