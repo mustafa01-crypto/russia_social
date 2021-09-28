@@ -6,6 +6,7 @@ import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/components/left_profile.dart';
 import 'package:russia_social/components/like_button.dart';
 import 'package:russia_social/components/top_row_icons.dart';
+import 'package:russia_social/pages/add_tab/add_feedback.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -49,7 +50,7 @@ class _GiveFeedbacksState extends State<GiveFeedbacks> {
                         ),
                         Container(
                           width: 5.w,
-                          height:5.w,
+                          height: 5.w,
                           decoration:
                               const BoxDecoration(shape: BoxShape.circle),
                           child: Image.network(
@@ -57,9 +58,18 @@ class _GiveFeedbacksState extends State<GiveFeedbacks> {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
-                          "Show original",
-                          style: bodyAddComment,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const AddFeedbacks()));
+                          },
+                          child: Text(
+                            "Show original",
+                            style: bodyAddComment,
+                          ),
                         )
                       ],
                     ),

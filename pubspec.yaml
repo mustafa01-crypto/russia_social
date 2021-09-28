@@ -41,6 +41,7 @@ dependencies:
   like_button: ^2.0.3
   simple_gradient_text: ^1.2.2
   bottom_sheet: ^1.0.1
+  dotted_border: ^2.0.0+1
 
 dev_dependencies:
   flutter_test:
