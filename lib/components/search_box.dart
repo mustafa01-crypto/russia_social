@@ -71,7 +71,7 @@ Widget searchBox(String path) {
 
 
 
-Widget searchTopBox(String path,String name,String country,String followers) {
+Widget searchTopBox(String path,String name,String country,String followers,String path2) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
     child: Container(
@@ -89,7 +89,30 @@ Widget searchTopBox(String path,String name,String country,String followers) {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              profile(path, 28.w, 14.h, 30),
+              Stack(
+                children: [
+                  profile(path, 28.w, 14.h, 30),
+                  Positioned(
+                    right: 1.w,
+                    bottom: 0.4.h,
+                    child: Container(
+                      width: 10.3.w,
+                      height: 10.3.w,
+                      decoration:  BoxDecoration(
+                          border: Border.all(
+                              color: Colors.white,
+                              width: 3
+                          ),
+                          shape: BoxShape.circle,
+                          image:   DecorationImage(
+                              image: AssetImage(path2)
+                          )
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+
               SizedBox(
                 width: 2.w,
               ),

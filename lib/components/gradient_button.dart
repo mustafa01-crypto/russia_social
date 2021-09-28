@@ -155,7 +155,7 @@ Widget gradientAddButton(String title,double width,double height) {
   );
 }
 
-Widget bottomSheetForm(String title) {
+Widget bottomSheetForm(String title,TextStyle style) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 4.w),
     child: Container(
@@ -169,7 +169,7 @@ Widget bottomSheetForm(String title) {
       ),
       child: TextFormField(
         initialValue: title,
-        style: textLabel,
+        style: style,
         decoration: InputDecoration(
             focusedBorder: InputBorder.none,
             enabledBorder: InputBorder.none,
@@ -184,6 +184,60 @@ Widget bottomSheetForm(String title) {
               ),
             )),
       ),
+    ),
+  );
+}
+
+Widget commentForm(TextStyle style) {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 4.w,vertical: 0.4.h),
+    child: Row(
+      children: [
+        Container(
+          width: 77.w,
+          height: 7.39.h,
+          alignment: Alignment.centerLeft,
+          decoration: BoxDecoration(
+            color: scaffoldBack,
+            borderRadius: BorderRadius.circular(2.66.w),
+          ),
+          child: TextFormField(
+            style: style,
+            decoration: InputDecoration(
+              hintText: "Your Comment",
+                hintStyle: style,
+                focusedBorder: InputBorder.none,
+                enabledBorder: InputBorder.none,
+              suffix: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      // Add Tag
+                    },
+                    icon: Icon(
+                      Icons.emoji_emotions,
+                      color: iconColor,
+                      size: 18.sp,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      // Add Tag
+                    },
+                    icon: Icon(
+                      Icons.photo,
+                      color: iconColor,
+                      size: 18.sp,
+                    ),
+                  ),
+
+                ],
+              )
+            ),
+          ),
+        ),
+      ],
     ),
   );
 }

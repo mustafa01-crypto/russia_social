@@ -28,6 +28,14 @@ TextStyle loginTitleStyle = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle feedbackTitleStyle = TextStyle(
+    letterSpacing: 1.0,
+    color: bodyTitleColor,
+    fontSize: 34.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
 TextStyle globalSearchTitle = TextStyle(
     letterSpacing: 1.0,
     color: bodyTitleColor,
@@ -134,7 +142,7 @@ TextStyle textLabel = TextStyle(
     fontStyle: FontStyle.normal);
 
 TextStyle addTrackAccountStyle = TextStyle(
-  height: 1.7,
+    height: 1.7,
     fontSize: 12.sp,
     color: Colors.black,
     fontWeight: FontWeight.w400,
@@ -149,6 +157,22 @@ TextStyle textLabelSupport = TextStyle(
     fontStyle: FontStyle.normal);
 
 TextStyle fallowNameStyle = TextStyle(
+    fontSize: 12.sp,
+    color: bodyTitleColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle addCommentCommentStyle = TextStyle(
+    height: 2,
+    fontSize: 12.sp,
+    color: iconColor,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.italic);
+
+TextStyle commentAddTextStyle = TextStyle(
+    height: 2,
     fontSize: 12.sp,
     color: bodyTitleColor,
     fontWeight: FontWeight.w400,
@@ -249,7 +273,6 @@ TextStyle bodyMenuItems = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
-
 TextStyle editProfileStyle = TextStyle(
     fontSize: 13.8.sp,
     color: bodyTitleColor,
@@ -271,6 +294,20 @@ TextStyle addTagStyle = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+TextStyle littleDateStyle = TextStyle(
+    fontSize: 8.6.sp,
+    color: Colors.black,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle addOrangeTagStyle = TextStyle(
+    fontSize: 10.6.sp,
+    color: buttonLeft,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
 //Gradient
 
 LinearGradient buttonGradient = LinearGradient(
@@ -285,5 +322,8 @@ final Shader textShader = LinearGradient(
   const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0),
 );
 final Shader linearGradient = const LinearGradient(
-  colors: <Color>[Color(0xFFE1E1DF),Color(0xFFFFFFFF), ],
+  colors: <Color>[
+    Color(0xFFE1E1DF),
+    Color(0xFFFFFFFF),
+  ],
 ).createShader(const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));

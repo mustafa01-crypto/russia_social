@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         (BuildContext context, Orientation orientation, DeviceType deviceType) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Russia Social',
         theme: ThemeData(
           bottomSheetTheme: const BottomSheetThemeData(backgroundColor: Colors.white),
           unselectedWidgetColor: buttonLeft,

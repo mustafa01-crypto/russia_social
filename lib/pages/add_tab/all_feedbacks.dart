@@ -144,12 +144,15 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      rowSubscribeBox("assets/brad.jpg","BradPidd","40 feedbacks"),
-                      rowSubscribeBox("assets/angel.jpg","Angela","400 feedbacks"),
-                      rowSubscribeBox("assets/brad.jpg","Rocky","40 feedbacks"),
-                      rowSubscribeBox("assets/uygun.jpg","Memati","10 feedbacks"),
+                      rowSubscribeBox("assets/brad.jpg","BradPidd","99 feedbacks","assets/star.png"),
+                      rowSubscribeBox("assets/angel.jpg","Angela","248 feedbacks","assets/number.png"),
+                      rowSubscribeBox("assets/brad.jpg","Rocky","157 feedbacks","assets/n3.png"),
+                      rowSubscribeBox("assets/uygun.png","Memati","4642 feedbacks","assets/n4.png"),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 2.h,
                 ),
                 sharedPost(),
                 SizedBox(

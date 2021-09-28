@@ -22,3 +22,23 @@ Widget addTag(String tag) {
     ),
   );
 }
+
+Widget addOrangeTag(String tag) {
+  return Padding(
+    padding:  EdgeInsets.symmetric(horizontal: 3.w),
+    child: Container(
+      padding: EdgeInsets.symmetric(horizontal: 3.w),
+      height: 4.h,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: buttonLeft),
+        borderRadius: BorderRadius.circular(16.w),
+      ),
+      child: Text(
+          tag,
+          style: addOrangeTagStyle
+      ),
+    ),
+  );
+}

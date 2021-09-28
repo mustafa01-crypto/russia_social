@@ -23,7 +23,7 @@ Widget buttonLike(int like,IconData fontIcons) {
           size: 18.sp,
         );
       },
-      likeCount: 665,
+      likeCount: like,
       countBuilder: (int? count, bool isLiked, String text) {
         var color = isLiked ? buttonLeft : iconColor;
         Widget result;

@@ -4,6 +4,7 @@ import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
+import 'give_feedback.dart';
 import 'menu_list.dart';
 
 class TopUsers extends StatefulWidget {
@@ -63,7 +64,10 @@ class _TopUsersState extends State<TopUsers> {
                             size: 21.sp,
                           ),
                           onPressed: () {
-                            //
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const GiveFeedbacks()));
                           },
                         ),
                       ],
@@ -85,13 +89,13 @@ class _TopUsersState extends State<TopUsers> {
                 ),
               ),
               searchTopBox("assets/uygun.png", "Memati Baş", "Türkiye Adana",
-                  "45 followers"),
+                  "45 followers","assets/star.png"),
               searchTopBox("assets/brad.jpg", "Brad Pid", "Germany Doshland",
-                  "45 followers"),
+                  "45 followers","assets/number.png"),
               searchTopBox("assets/angel.jpg", "Agelina Jollie", "USA Miami",
-                  "45 followers"),
+                  "45 followers","assets/n3.png"),
               searchTopBox("assets/rocky.jpg", "Slywester Stalline", "Türkiye Adana",
-                  "45 followers"),
+                  "45 followers","assets/n4.png"),
             ],
           ),
         ),

@@ -7,7 +7,7 @@ import 'package:sizer/sizer.dart';
 
 import 'gradient_button.dart';
 
-Widget rowSubscribeBox(String path, String name, String followers) {
+Widget rowSubscribeBox(String path1, String name, String followers,String path2) {
   return Padding(
     padding: EdgeInsets.only(left: 4.w),
     child: Stack(
@@ -21,7 +21,7 @@ Widget rowSubscribeBox(String path, String name, String followers) {
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 3.h),
+                padding: EdgeInsets.only(top: 4.h),
                 child: Container(
                   width: 15.w,
                   height: 10.h,
@@ -31,7 +31,7 @@ Widget rowSubscribeBox(String path, String name, String followers) {
                   child: CircleAvatar(
                     radius: 12.w,
                     backgroundColor: Colors.white,
-                    backgroundImage: const AssetImage("assets/angel.jpg"),
+                    backgroundImage:  AssetImage(path1),
                   ),
                 ),
               ),
@@ -39,18 +39,18 @@ Widget rowSubscribeBox(String path, String name, String followers) {
                 height: 1.h,
               ),
               Text(
-                "Peter Rollins",
+                name,
                 style: profileAddStyle,
               ),
               SizedBox(
                 height: 0.6.h,
               ),
               Text(
-                "45 feedbacks",
+                followers,
                 style: socialNetworkCancelStyle,
               ),
               SizedBox(
-                height: 1.6.h,
+                height: 2.h,
               ),
               gradientAddButton("+ Subscribe", 28.w, 3.6.h),
             ],
@@ -80,8 +80,8 @@ Widget rowSubscribeBox(String path, String name, String followers) {
                 width: 3
               ),
               shape: BoxShape.circle,
-              image: const DecorationImage(
-                image: AssetImage("assets/angel.jpg",)
+              image:  DecorationImage(
+                image: AssetImage(path2,)
               )
             ),
           ),

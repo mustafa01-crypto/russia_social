@@ -86,7 +86,7 @@ class _SearchGlobalState extends State<SearchGlobal> {
                               SizedBox(
                                 height: 1.h,
                               ),
-                              bottomSheetForm("Enter tag"),
+                              bottomSheetForm("Enter tag",textLabel),
                               SizedBox(
                                 height: 2.h,
                               ),
@@ -209,7 +209,7 @@ class _SearchGlobalState extends State<SearchGlobal> {
                               SizedBox(
                                 height: 3.h,
                               ),
-                              bottomSheetForm("Country"),
+                              bottomSheetForm("Country",textLabel),
                               SizedBox(
                                 height: 2.h,
                               ),
@@ -361,7 +361,7 @@ class _SearchGlobalState extends State<SearchGlobal> {
                               SizedBox(
                                 height: 3.h,
                               ),
-                              bottomSheetForm("City"),
+                              bottomSheetForm("City",textLabel),
                               SizedBox(
                                 height: 2.h,
                               ),
