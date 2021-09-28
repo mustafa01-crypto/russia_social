@@ -7,6 +7,8 @@ import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
+import 'add_feedback_detail.dart';
+
 class AddFeedbacks extends StatefulWidget {
   const AddFeedbacks({Key? key}) : super(key: key);
 
@@ -121,7 +123,6 @@ class _AddFeedbacksState extends State<AddFeedbacks> {
                               enabledBorder: InputBorder.none),
                         ),
                       ),
-
                     ],
                   ),
                 ),
@@ -313,7 +314,15 @@ class _AddFeedbacksState extends State<AddFeedbacks> {
               ),
               Align(
                   alignment: Alignment.topCenter,
-                  child: gradientLoginButton("Publicate", 86.66.w, 7.94.h)),
+                  child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const AddFeedBackDetails()));
+                      },
+                      child:
+                          gradientLoginButton("Publicate", 86.66.w, 7.94.h))),
               SizedBox(
                 height: 2.h,
               ),
