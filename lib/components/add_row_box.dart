@@ -7,12 +7,12 @@ import 'package:sizer/sizer.dart';
 
 import 'gradient_button.dart';
 
-Widget rowSubscribeBox(String path1, String name, String followers,String path2) {
+Widget rowSubscribeBox(
+    String path1, String name, String followers, String path2) {
   return Padding(
     padding: EdgeInsets.only(left: 4.w),
     child: Stack(
       children: [
-
         Container(
           width: 46.w,
           height: 27.h,
@@ -31,7 +31,7 @@ Widget rowSubscribeBox(String path1, String name, String followers,String path2)
                   child: CircleAvatar(
                     radius: 12.w,
                     backgroundColor: Colors.white,
-                    backgroundImage:  AssetImage(path1),
+                    backgroundImage: AssetImage(path1),
                   ),
                 ),
               ),
@@ -74,24 +74,19 @@ Widget rowSubscribeBox(String path1, String name, String followers,String path2)
           child: Container(
             width: 8.w,
             height: 8.w,
-            decoration:  BoxDecoration(
-              border: Border.all(
-                color: Colors.white,
-                width: 3
-              ),
-              shape: BoxShape.circle,
-              image:  DecorationImage(
-                image: AssetImage(path2,)
-              )
-            ),
+            decoration: BoxDecoration(
+                border: Border.all(color: Colors.white, width: 3),
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    image: AssetImage(
+                  path2,
+                ))),
           ),
         ),
       ],
     ),
   );
 }
-
-
 
 Widget rowCommentBox(
   String title,
@@ -172,6 +167,67 @@ Widget columnCommentBox(String text) {
           ),
           Padding(
             padding: EdgeInsets.only(left: 2.w, right: 3.w),
+            child: Row(
+              children: [
+                Text(
+                  text,
+                  style: socialNetworkAddStyle,
+                ),
+                SizedBox(
+                  width: 4.w,
+                ),
+                FaIcon(
+                  FontAwesomeIcons.longArrowAltRight,
+                  color: buttonLeft,
+                  size: 21.sp,
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    ),
+  );
+}
+
+
+Widget savedDrafts(String text,String title) {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 2.66.w),
+    child: Container(
+      width: 100.w,
+      height: 23.h,
+      decoration: BoxDecoration(
+          color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            height: 2.h,
+          ),
+          Padding(
+            padding:  EdgeInsets.only(left:4.w ),
+            child: Text("My first meeting with love",style: bodyMenuItems,),
+          ),
+
+          SizedBox(
+            height: 2.h,
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 4.w, right: 3.w),
+            child: Text(
+              "It is not a fact that the"
+                  " approximate structure of marketing "
+                  "research positions "
+                  "the branded media mix...",
+              style: bodyEmailStyle,
+            ),
+          ),
+          SizedBox(
+            height: 2.h,
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 4.w, right: 3.w),
             child: Row(
               children: [
                 Text(

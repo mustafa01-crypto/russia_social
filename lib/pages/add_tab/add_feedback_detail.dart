@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:russia_social/components/add_tag.dart';
 import 'package:russia_social/components/app_logo.dart';
 import 'package:russia_social/components/gradient_button.dart';
+import 'package:russia_social/pages/add_tab/saved_drafts.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -643,7 +644,14 @@ class _AddFeedBackDetailsState extends State<AddFeedBackDetails> {
               ),
               Align(
                   alignment: Alignment.topCenter,
-                  child: gradientLoginButton("Publicate", 86.66.w, 7.94.h)),
+                  child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SavedDrafts()));
+                      },
+                      child: gradientLoginButton("Publicate", 86.66.w, 7.94.h))),
               SizedBox(
                 height: 2.h,
               ),
