@@ -21,4 +21,5 @@ Color switchColor = const Color(0xFFD6D2CC);
 Color switchColor2 = const Color(0xFFF3F2F0);
 
 Color replyColor = const Color(0xFFF8F5EF);
+Color sendMessage = const Color(0xFFFAF9F8);
 

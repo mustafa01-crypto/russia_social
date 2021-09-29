@@ -67,7 +67,8 @@ class _TopUsersState extends State<TopUsers> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const GiveFeedbacks()));
+                                    builder: (context) =>
+                                        const GiveFeedbacks()));
                           },
                         ),
                       ],
@@ -89,13 +90,13 @@ class _TopUsersState extends State<TopUsers> {
                 ),
               ),
               searchTopBox("assets/uygun.png", "Memati Baş", "Türkiye Adana",
-                  "45 followers","assets/star.png"),
+                  "45 followers", "assets/star.png"),
               searchTopBox("assets/brad.jpg", "Brad Pid", "Germany Doshland",
-                  "45 followers","assets/number.png"),
+                  "45 followers", "assets/number.png"),
               searchTopBox("assets/angel.jpg", "Agelina Jollie", "USA Miami",
-                  "45 followers","assets/n3.png"),
-              searchTopBox("assets/rocky.jpg", "Slywester Stalline", "Türkiye Adana",
-                  "45 followers","assets/n4.png"),
+                  "45 followers", "assets/n3.png"),
+              searchTopBox("assets/rocky.jpg", "Slywester Stalline",
+                  "Türkiye Adana", "45 followers", "assets/n4.png"),
             ],
           ),
         ),
