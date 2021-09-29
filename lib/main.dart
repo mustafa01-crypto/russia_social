@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:russia_social/pages/login/sign_in.dart';
 import 'package:russia_social/pages/tabs_page.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:sizer/sizer.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
           unselectedWidgetColor: buttonLeft,
           primarySwatch: Colors.blue,
         ),
-        home: const TabsPage(),
+        home: const SignIn(),
       );
     });
   }

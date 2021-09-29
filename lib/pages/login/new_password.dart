@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:russia_social/components/app_logo.dart';
 import 'package:russia_social/components/gradient_button.dart';
+import 'package:russia_social/pages/tabs_page.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -35,8 +36,7 @@ class _NewPasswordState extends State<NewPassword> {
               height: 3.7.h,
             ),
             Padding(
-              padding:
-              EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
+              padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
               child: Container(
                 width: 100.w,
                 height: 60.11.h,
@@ -78,25 +78,32 @@ class _NewPasswordState extends State<NewPassword> {
                     SizedBox(
                       height: 4.h,
                     ),
-
                     formBox("New password", textLabel),
                     SizedBox(
                       height: 2.h,
                     ),
                     formBox("Repeat new password", textLabel),
-
                     SizedBox(
                       height: 4.h,
                     ),
-                    gradientLoginButton("Save",86.66.w, 7.39.h,),
-
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const TabsPage()));
+                        },
+                        child: gradientLoginButton(
+                          "Save",
+                          86.66.w,
+                          7.39.h,
+                        )),
                   ],
                 ),
               ),
             ),
           ],
         ),
-
       ),
     );
   }

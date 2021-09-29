@@ -50,7 +50,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   child: Column(children: [
                     SizedBox(
-                      height: 5.39.h,
+                      height: 3.h,
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
@@ -69,7 +69,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.person,
                               color: iconColor,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -102,7 +102,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.share,
                               color: iconColor,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -135,7 +135,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.lock,
                               color: iconColor,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -168,7 +168,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.notifications,
                               color: iconColor,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -198,7 +198,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             FaIcon(
                               FontAwesomeIcons.language,
                               color: iconColor,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -231,7 +231,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.contact_support_rounded,
                               color: iconColor,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -260,7 +260,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.delete,
                               color: buttonLeft,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,
@@ -291,7 +291,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.exit_to_app,
                               color: buttonLeft,
-                              size: 18.sp,
+                              size: 6.w,
                             ),
                             SizedBox(
                               width: 4.w,

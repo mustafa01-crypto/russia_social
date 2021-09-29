@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:russia_social/components/app_logo.dart';
 import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/pages/login/forgot_password.dart';
@@ -17,6 +18,13 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   bool isChecked = false;
+
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: []);
+  }
 
   @override
   Widget build(BuildContext context) {

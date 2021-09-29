@@ -8,6 +8,9 @@ Widget topRow(BuildContext context,String pageTitle,double width) {
   return  Row(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
+      SizedBox(
+        width: 1.2.w,
+      ),
       IconButton(
        icon: Icon(
          Icons.arrow_back_ios,
