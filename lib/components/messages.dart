@@ -58,3 +58,34 @@ Widget messageSender(String message,String time) {
     ),
   );
 }
+
+Widget messagePhotoSender(String path,String time) {
+  return Align(
+    alignment: Alignment.centerRight,
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Container(
+          padding:  EdgeInsets.all(4.w),
+          margin:  EdgeInsets.only(right: 4.5.w,top: 2.w,left: 4.5.w,bottom: 1.w),
+          constraints: const BoxConstraints(
+            maxWidth: 200,
+            maxHeight: 150
+          ),
+          decoration: BoxDecoration(
+              color:sendMessage,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(5.w),
+                topRight: Radius.circular(5.w),
+                bottomRight: Radius.circular(5.w),
+              ),
+            image: DecorationImage(
+              image: AssetImage(path)
+            )
+          ),
+        ),
+        Text(time,style: addTagStyle,)
+      ],
+    ),
+  );
+}

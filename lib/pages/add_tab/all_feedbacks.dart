@@ -144,10 +144,14 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      rowSubscribeBox("assets/brad.jpg","BradPidd","99 feedbacks","assets/star.png"),
-                      rowSubscribeBox("assets/angel.jpg","Angela","248 feedbacks","assets/number.png"),
-                      rowSubscribeBox("assets/brad.jpg","Rocky","157 feedbacks","assets/n3.png"),
-                      rowSubscribeBox("assets/uygun.png","Memati","4642 feedbacks","assets/n4.png"),
+                      rowSubscribeBox("assets/brad.jpg", "BradPidd",
+                          "99 feedbacks", "assets/star.png"),
+                      rowSubscribeBox("assets/angel.jpg", "Angela",
+                          "248 feedbacks", "assets/number.png"),
+                      rowSubscribeBox("assets/brad.jpg", "Rocky",
+                          "157 feedbacks", "assets/n3.png"),
+                      rowSubscribeBox("assets/uygun.png", "Memati",
+                          "4642 feedbacks", "assets/n4.png"),
                     ],
                   ),
                 ),
@@ -159,9 +163,16 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                   height: 3.h,
                 ),
                 sharedPost(),
+                SizedBox(
+                  height: 3.h,
+                ),
                 Align(
                     alignment: Alignment.center,
-                    child: gradientAddButton("See More", 28.w, 3.6.h)),
+                    child: GestureDetector(
+                      onTap: (){
+
+                      },
+                        child: gradientAddButton("See More", 28.w, 3.6.h))),
                 SizedBox(
                   height: 3.h,
                 ),

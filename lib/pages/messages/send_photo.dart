@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:russia_social/components/left_profile.dart';
 import 'package:russia_social/components/messages.dart';
-import 'package:russia_social/pages/messages/send_photo.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
-class SendMessage extends StatefulWidget {
-  const SendMessage({Key? key}) : super(key: key);
+class SendPhoto extends StatefulWidget {
+  const SendPhoto({Key? key}) : super(key: key);
 
   @override
-  _SendMessageState createState() => _SendMessageState();
+  _SendPhotoState createState() => _SendPhotoState();
 }
 
-class _SendMessageState extends State<SendMessage> {
+class _SendPhotoState extends State<SendPhoto> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -34,7 +33,7 @@ class _SendMessageState extends State<SendMessage> {
                       color: buttonLeft,
                       size: 21.sp,
                     ),
-                    onPressed: () {
+                    onPressed: (){
                       Navigator.pop(context);
                     },
                   ),
@@ -50,12 +49,17 @@ class _SendMessageState extends State<SendMessage> {
                         child: Container(
                           width: 4.w,
                           height: 4.w,
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 3),
+                          decoration:  BoxDecoration(
+                              border: Border.all(
+                                  color: Colors.white,
+                                  width: 3
+                              ),
                               shape: BoxShape.circle,
-                              image: const DecorationImage(
+                              image:   const DecorationImage(
                                   image: AssetImage("assets/top.png"),
-                                  fit: BoxFit.cover)),
+                                  fit: BoxFit.cover
+                              )
+                          ),
                         ),
                       ),
                     ],
@@ -76,20 +80,25 @@ class _SendMessageState extends State<SendMessage> {
                       color: buttonLeft,
                       size: 21.sp,
                     ),
-                    onPressed: () {
+                    onPressed: (){
                       //
                     },
                   ),
+
+
                 ],
               ),
+
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 2.66.w),
+                padding:  EdgeInsets.symmetric(horizontal:2.66.w),
                 child: Container(
                   width: 100.w,
                   height: 84.h,
                   decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5.33.w)),
+                      borderRadius: BorderRadius.circular(5.33.w)
+                  ),
+
                   child: Column(
                     children: [
                       SizedBox(
@@ -97,32 +106,28 @@ class _SendMessageState extends State<SendMessage> {
                       ),
                       Container(
                         width: 18.w,
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 1.w, vertical: 0.4.h),
+                        padding: EdgeInsets.symmetric(horizontal: 1.w,vertical: 0.4.h),
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                             color: Colors.white,
-                            border: Border.all(color: dividerColor, width: 2),
-                            borderRadius: BorderRadius.circular(5.33.w)),
-                        child: Text(
-                          "21 June",
-                          style: addTagStyle,
+                            border: Border.all(
+                                color:dividerColor,
+                                width: 2
+                            ),
+                            borderRadius: BorderRadius.circular(5.33.w)
                         ),
+                        child: Text("21 June",style: addTagStyle,),
                       ),
+
                       SizedBox(
                         height: 1.h,
                       ),
-                      messageReceiver("Hii", "12:05"),
-                      messageSender("how are you?", "12:06"),
-                      messageReceiver("I am fine.And you", "13:21"),
-                      messageSender(
-                          "The free Google service allows "
-                              "you to instantly translate words,"
-                              " phrases and web pages from English"
-                              " to over 100 languages ​​and vice versa.",
-                          "09:05"),
-                      messageReceiver("Hii", "04:00"),
-                      messageSender("how are you?", "08:56"),
+                      messageReceiver("Hii","12:05"),
+                      messageSender("how are you?","12:06"),
+                      messageReceiver("I am fine.And you","13:21"),
+                      messagePhotoSender("assets/uygun.png","21:18"),
+                      messageReceiver("Hii","04:00"),
+                      messageSender("how are you?","08:56"),
                       SizedBox(
                         height: 2.h,
                       ),
@@ -147,11 +152,14 @@ class _SendMessageState extends State<SendMessage> {
                             width: 55.w,
                             height: 5.h,
                             child: TextFormField(
-                              decoration: InputDecoration(
+
+                              decoration:  InputDecoration(
                                   focusedBorder: InputBorder.none,
                                   enabledBorder: InputBorder.none,
                                   hintText: "Write a message...",
-                                  hintStyle: textLabel),
+                                  hintStyle: textLabel
+                              ),
+
                             ),
                           ),
                           SizedBox(
@@ -166,13 +174,8 @@ class _SendMessageState extends State<SendMessage> {
                             width: 3.w,
                           ),
                           IconButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const SendPhoto(),
-                                ),
-                              );
+                            onPressed: (){
+
                             },
                             icon: Icon(
                               Icons.send_outlined,
@@ -190,6 +193,7 @@ class _SendMessageState extends State<SendMessage> {
           ),
         ),
       ),
+
     );
   }
 }
