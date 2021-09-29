@@ -285,7 +285,7 @@ TextStyle bodyCommentTitle = TextStyle(
 TextStyle bodyMenuItems = TextStyle(
     fontSize: 15.2.sp,
     color: titleColor,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 

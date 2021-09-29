@@ -44,7 +44,7 @@ class _NotificationPageState extends State<NotificationPage> {
                           icon: Icon(
                             Icons.person_add_alt_1_rounded,
                             color: buttonLeft,
-                            size: 21.sp,
+                            size: 6.4.w,
                           ),
                           onPressed: () {
                             Navigator.push(

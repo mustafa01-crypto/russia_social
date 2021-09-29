@@ -29,13 +29,13 @@ class _AddMenuState extends State<AddMenu> {
               height: 4.h,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
                   icon: FaIcon(
                     FontAwesomeIcons.times,
                     color: buttonLeft,
-                    size: 21.sp,
+                    size: 6.4.w,
                   ),
                   onPressed: () {
                     Navigator.pop(context);
@@ -48,7 +48,7 @@ class _AddMenuState extends State<AddMenu> {
                   icon: Icon(
                     Icons.mail_outline_outlined,
                     color: buttonLeft,
-                    size: 21.sp,
+                    size: 6.4.w,
                   ),
                   onPressed: () {
                     //
@@ -57,10 +57,10 @@ class _AddMenuState extends State<AddMenu> {
               ],
             ),
             SizedBox(
-              height: 1.h,
+              height: 3.h,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 4.w, top: 2.h),
+              padding: EdgeInsets.only(left: 6.w, top: 2.h),
               child: GestureDetector(
                 onTap: (){
                   Navigator.push(
@@ -74,7 +74,7 @@ class _AddMenuState extends State<AddMenu> {
               )),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 4.w, top: 2.h),
+              padding: EdgeInsets.only(left: 6.w, top: 2.h),
               child: GestureDetector(
                 onTap: (){
                   Navigator.push(
@@ -89,7 +89,7 @@ class _AddMenuState extends State<AddMenu> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 4.w, top: 2.h),
+              padding: EdgeInsets.only(left: 6.w, top: 2.h),
               child: GestureDetector(
                 onTap: (){
                   Navigator.push(

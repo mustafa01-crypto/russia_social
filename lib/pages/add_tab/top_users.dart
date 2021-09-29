@@ -35,13 +35,13 @@ class _TopUsersState extends State<TopUsers> {
                       height: 3.h,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         IconButton(
                           icon: Icon(
-                            Icons.menu_open_outlined,
+                            Icons.menu_outlined,
                             color: buttonLeft,
-                            size: 21.sp,
+                            size: 6.4.w,
                           ),
                           onPressed: () {
                             Navigator.push(
@@ -61,7 +61,7 @@ class _TopUsersState extends State<TopUsers> {
                           icon: Icon(
                             Icons.mail_outline_outlined,
                             color: buttonLeft,
-                            size: 21.sp,
+                            size: 6.4.w,
                           ),
                           onPressed: () {
                             Navigator.push(

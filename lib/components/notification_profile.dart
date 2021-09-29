@@ -62,28 +62,35 @@ Widget notificationTracks(String number) {
           SizedBox(
             width: 36.w,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Container(
-                    width: 24.w,
-                    height: 8.7.h,
-                    alignment: Alignment.centerLeft,
-                    child: GradientText(
-                      number,
-                      style: TextStyle(
-                          height: 1,
-                          fontSize: 50.sp,
-                          fontFamily: 'Graphik',
-                          fontWeight: FontWeight.w100,
-                          foreground: Paint()
-                            ..shader = linearGradient),
-                      gradientDirection: GradientDirection.ttb,
-                      colors: const [
-                        Color(0xFFE1E1DF),
-                        Color(0xFFE1E1DF),
-                        Color(0xFFFFFFFF),
-                      ],
-                    )),
+                SizedBox(
+                  height: 2.h,
+                ),
+                Padding(
+                  padding:  EdgeInsets.only(left: 3.w),
+                  child: Container(
+                      width: 24.w,
+                      height: 8.7.h,
+                      alignment: Alignment.centerLeft,
+                      child: GradientText(
+                        number,
+                        style: TextStyle(
+                            height: 1,
+                            fontSize: 50.sp,
+                            fontFamily: 'Graphik',
+                            fontWeight: FontWeight.w100,
+                            foreground: Paint()
+                              ..shader = linearGradient),
+                        gradientDirection: GradientDirection.ttb,
+                        colors: const [
+                          Color(0xFFE1E1DF),
+                          Color(0xFFE1E1DF),
+                          Color(0xFFFFFFFF),
+                        ],
+                      )),
+                ),
                 SizedBox(
                   height: 0.8.h,
                 ),
@@ -107,7 +114,7 @@ Widget notificationTracks(String number) {
                       Icon(
                         Icons.location_on,
                         color: bodyDateColor,
-                        size: 13.sp,
+                        size: 3.9.w,
                       ),
                       SizedBox(
                         width: 1.w,
@@ -128,13 +135,13 @@ Widget notificationTracks(String number) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 15.5.h,
+                  height: 14.4.h,
                 ),
                 IconButton(
                   icon: Icon(
                     Icons.settings,
                     color: iconColor,
-                    size: 15.sp,
+                    size: 4.5.w,
                   ),
                   onPressed: () {
                     //Icon Settings
@@ -151,7 +158,7 @@ Widget notificationTracks(String number) {
                   icon: Icon(
                     Icons.cancel_outlined,
                     color: iconColor,
-                    size: 15.sp,
+                    size: 4.5.w,
                   ),
                   onPressed: () {
                     //Icon Settings
@@ -180,7 +187,7 @@ Widget messageBox(String path,TextStyle style){
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          profile(path, 15.w, 15.w, 15.w),
+          profile(path, 15.w, 8.4.h, 15.w),
           SizedBox(width: 2.w,),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,

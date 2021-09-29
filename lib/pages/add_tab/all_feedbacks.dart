@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:russia_social/components/add_row_box.dart';
 import 'package:russia_social/components/gradient_button.dart';
 import 'package:russia_social/components/shared_post.dart';
+import 'package:russia_social/pages/add_tab/top_users.dart';
 import 'package:russia_social/widgets/constants.dart';
 import 'package:russia_social/widgets/text_widget.dart';
 import 'package:sizer/sizer.dart';
 
+import 'last_comments.dart';
 import 'menu_list.dart';
 
 class AllFeedbacks extends StatefulWidget {
@@ -40,13 +42,13 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                         height: 3.h,
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           IconButton(
                             icon: Icon(
-                              Icons.menu_open_outlined,
+                              Icons.menu_outlined,
                               color: buttonLeft,
-                              size: 21.sp,
+                              size: 6.4.w,
                             ),
                             onPressed: () {
                               Navigator.push(
@@ -66,7 +68,7 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                             icon: Icon(
                               Icons.mail_outline_outlined,
                               color: buttonLeft,
-                              size: 21.sp,
+                              size: 6.4.w,
                             ),
                             onPressed: () {
                               //
@@ -91,7 +93,7 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                   ),
                 ),
                 SizedBox(
-                  height: 1.h,
+                  height: 2.h,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 4.w),
@@ -131,9 +133,17 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                       "Top Users for expanding",
                       style: addTitleStyle,
                     ),
-                    Text(
-                      "More",
-                      style: userNickName,
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const TopUsers()));
+                      },
+                      child: Text(
+                        "More",
+                        style: userNickName,
+                      ),
                     ),
                   ],
                 ),
@@ -169,10 +179,8 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                 Align(
                     alignment: Alignment.center,
                     child: GestureDetector(
-                      onTap: (){
-
-                      },
-                        child: gradientAddButton("See More", 28.w, 3.6.h))),
+                        onTap: () {},
+                        child: gradientAddButton("See More", 28.w, 3.99.h))),
                 SizedBox(
                   height: 3.h,
                 ),
@@ -188,9 +196,17 @@ class _AllFeedbacksState extends State<AllFeedbacks> {
                       SizedBox(
                         width: 45.w,
                       ),
-                      Text(
-                        "More",
-                        style: userNickName,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const LastComments()));
+                        },
+                        child: Text(
+                          "More",
+                          style: userNickName,
+                        ),
                       ),
                     ],
                   ),

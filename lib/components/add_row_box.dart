@@ -21,10 +21,10 @@ Widget rowSubscribeBox(
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 4.h),
+                padding: EdgeInsets.only(top: 6.h),
                 child: Container(
-                  width: 15.w,
-                  height: 10.h,
+                  width: 12.w,
+                  height: 6.72.h,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
@@ -92,8 +92,9 @@ Widget rowCommentBox(
   String title,
 ) {
   return Padding(
-    padding: EdgeInsets.only(left: 2.66.w),
+    padding: EdgeInsets.only(left: 3.w),
     child: Container(
+      padding: EdgeInsets.only(right: 2.66.w),
       width: 75.2.w,
       height: 24.h,
       decoration: BoxDecoration(
@@ -190,8 +191,7 @@ Widget columnCommentBox(String text) {
   );
 }
 
-
-Widget savedDrafts(String text,String title) {
+Widget savedDrafts(String text, String title) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 2.66.w),
     child: Container(
@@ -206,10 +206,12 @@ Widget savedDrafts(String text,String title) {
             height: 2.h,
           ),
           Padding(
-            padding:  EdgeInsets.only(left:4.w ),
-            child: Text("My first meeting with love",style: bodyMenuItems,),
+            padding: EdgeInsets.only(left: 4.w),
+            child: Text(
+              "My first meeting with love",
+              style: bodyMenuItems,
+            ),
           ),
-
           SizedBox(
             height: 2.h,
           ),
@@ -217,9 +219,9 @@ Widget savedDrafts(String text,String title) {
             padding: EdgeInsets.only(left: 4.w, right: 3.w),
             child: Text(
               "It is not a fact that the"
-                  " approximate structure of marketing "
-                  "research positions "
-                  "the branded media mix...",
+              " approximate structure of marketing "
+              "research positions "
+              "the branded media mix...",
               style: bodyEmailStyle,
             ),
           ),

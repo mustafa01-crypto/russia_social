@@ -76,7 +76,7 @@ Widget searchTopBox(String path,String name,String country,String followers,Stri
     padding: EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
     child: Container(
       width: 100.w,
-      height: 20.63.h,
+      height: 22.63.h,
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(5.33.w)),
       child: Column(
@@ -87,17 +87,17 @@ Widget searchTopBox(String path,String name,String country,String followers,Stri
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Stack(
                 children: [
-                  profile(path, 28.w, 14.h, 30),
+                  profile(path, 24.w, 13.44.h,  24.w),
                   Positioned(
                     right: 1.w,
                     bottom: 0.4.h,
                     child: Container(
-                      width: 10.3.w,
-                      height: 10.3.w,
+                      width: 8.w,
+                      height: 4.48.h,
                       decoration:  BoxDecoration(
                           border: Border.all(
                               color: Colors.white,
@@ -114,7 +114,7 @@ Widget searchTopBox(String path,String name,String country,String followers,Stri
               ),
 
               SizedBox(
-                width: 2.w,
+                width: 5.w,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,7 +132,7 @@ Widget searchTopBox(String path,String name,String country,String followers,Stri
                       Icon(
                         Icons.location_on,
                         color: bodyDateColor,
-                        size: 13.sp,
+                        size: 3.9.w,
                       ),
                       SizedBox(
                         width: 1.w,
@@ -153,7 +153,7 @@ Widget searchTopBox(String path,String name,String country,String followers,Stri
                   SizedBox(
                     height: 2.h,
                   ),
-                  gradientLoginButton("+ Subscribe",57.66.w,4.6.h)
+                  gradientLoginButton("+ Subscribe",57.66.w,4.99.h)
                 ],
               )
             ],
