@@ -21,7 +21,7 @@ Widget sharedPost() {
             width: 100.w,
             height: 20.h,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25)),
+                borderRadius: BorderRadius.circular(5.8.w)),
             child: Image.asset(
               "assets/badboy.jpg",
               fit: BoxFit.cover,
@@ -36,10 +36,10 @@ Widget sharedPost() {
                   shape: BoxShape.circle,
                   border: Border.all(
                       color: Colors.white, width: 0.3.w)),
-              child: const CircleAvatar(
-                radius: 30,
+              child:  CircleAvatar(
+                radius: 7.58.w,
                 backgroundColor: Colors.white,
-                backgroundImage: AssetImage("assets/badboy.jpg"),
+                backgroundImage: const AssetImage("assets/badboy.jpg"),
               ),
             ),
           ),
@@ -127,7 +127,7 @@ Widget sharedPost() {
                         FaIcon(
                           FontAwesomeIcons.longArrowAltRight,
                           color: buttonLeft,
-                          size: 18.sp,
+                          size: 6.w,
 
                         )
 

@@ -180,7 +180,7 @@ Widget messageBox(String path,TextStyle style){
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          profile(path, 18.w, 18.w, 27),
+          profile(path, 15.w, 15.w, 15.w),
           SizedBox(width: 2.w,),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,

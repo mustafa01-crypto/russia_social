@@ -10,10 +10,10 @@ Widget messageReceiver(String message,String time) {
     child: Column(
       children: [
         Container(
-          padding:  EdgeInsets.all(4.w),
-          margin:  EdgeInsets.only(right: 4.5.w,top: 2.w,left: 4.5.w,bottom: 1.w),
-          constraints: const BoxConstraints(
-            maxWidth: 200,
+          padding:  EdgeInsets.symmetric(horizontal: 4.w,vertical: 1.h),
+          margin:  EdgeInsets.only(right: 4.5.w,top: 0.5.h,left: 4.5.w,bottom: 0.25.h),
+          constraints:  BoxConstraints(
+            maxWidth: 50.w,
           ),
           decoration: BoxDecoration(
               color:buttonColor,
@@ -38,10 +38,10 @@ Widget messageSender(String message,String time) {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          padding:  EdgeInsets.all(4.w),
-          margin:  EdgeInsets.only(right: 4.5.w,top: 2.w,left: 4.5.w,bottom: 1.w),
-          constraints: const BoxConstraints(
-            maxWidth: 200,
+          padding:  EdgeInsets.symmetric(horizontal: 4.w,vertical: 1.h),
+          margin:  EdgeInsets.only(right: 4.5.w,top: 0.5.h,left: 4.5.w,bottom: 0.25.h),
+          constraints:  BoxConstraints(
+            maxWidth: 50.w,
           ),
           decoration: BoxDecoration(
               color:sendMessage,
@@ -66,11 +66,11 @@ Widget messagePhotoSender(String path,String time) {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          padding:  EdgeInsets.all(4.w),
-          margin:  EdgeInsets.only(right: 4.5.w,top: 2.w,left: 4.5.w,bottom: 1.w),
-          constraints: const BoxConstraints(
-            maxWidth: 200,
-            maxHeight: 150
+          padding:  EdgeInsets.symmetric(horizontal: 4.w,vertical: 1.h),
+          margin:  EdgeInsets.only(right: 4.5.w,top: 0.5.h,left: 4.5.w,bottom: 0.25.h),
+          constraints:  BoxConstraints(
+            maxWidth: 50.w,
+            maxHeight: 25.h
           ),
           decoration: BoxDecoration(
               color:sendMessage,

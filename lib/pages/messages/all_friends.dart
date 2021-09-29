@@ -67,13 +67,13 @@ class _AllFriendsState extends State<AllFriends> {
                       children: [
                         Stack(
                           children: [
-                            profile("assets/rocky.jpg", 18.w, 18.w, 27),
+                            profile("assets/rocky.jpg", 15.w, 15.w, 15.w),
                             Positioned(
                               right: 1.7.w,
                               bottom: 0.2.h,
                               child: Container(
-                                width: 6.w,
-                                height: 6.w,
+                                width: 5.w,
+                                height: 5.w,
                                 decoration:  BoxDecoration(
                                     border: Border.all(
                                         color: Colors.white,

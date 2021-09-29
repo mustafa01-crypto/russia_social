@@ -23,3 +23,5 @@ Color switchColor2 = const Color(0xFFF3F2F0);
 Color replyColor = const Color(0xFFF8F5EF);
 Color sendMessage = const Color(0xFFFAF9F8);
 
+Color popupBlue = const Color(0xFF3F8AE0);
+Color popupRed = const Color(0xFFE64646);

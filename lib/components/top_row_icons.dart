@@ -12,7 +12,7 @@ Widget topRow(BuildContext context,String pageTitle,double width) {
        icon: Icon(
          Icons.arrow_back_ios,
          color: buttonLeft,
-         size: 21.sp,
+         size: 6.4.w,
        ),
         onPressed: (){
          Navigator.pop(context);

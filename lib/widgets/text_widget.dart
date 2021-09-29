@@ -141,6 +141,22 @@ TextStyle textLabel = TextStyle(
     fontFamily: 'Graphic',
     fontStyle: FontStyle.normal);
 
+
+TextStyle popupBlueStyle = TextStyle(
+    fontSize: 12.sp,
+    color: popupBlue,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+TextStyle popupRedStyle = TextStyle(
+    fontSize: 12.sp,
+    color: popupRed,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Graphic',
+    fontStyle: FontStyle.normal);
+
+
 TextStyle addTrackAccountStyle = TextStyle(
     height: 1.7,
     fontSize: 12.sp,

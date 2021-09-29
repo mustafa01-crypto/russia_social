@@ -46,7 +46,7 @@ class _YourProfileState extends State<YourProfile> {
                       EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
-                    height: 61.h,
+                    height: 60.5.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5.33.w)),
@@ -60,7 +60,7 @@ class _YourProfileState extends State<YourProfile> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            profile("assets/badboy.jpg", 28.w, 14.h, 30),
+                            profile("assets/badboy.jpg", 28.w, 15.68.h, 15.68.h),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -99,7 +99,7 @@ class _YourProfileState extends State<YourProfile> {
                               Icon(
                                 Icons.location_on,
                                 color: bodyDateColor,
-                                size: 13.sp,
+                                size:3.9.w,
                               ),
                               SizedBox(
                                 width: 1.w,

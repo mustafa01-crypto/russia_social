@@ -9,7 +9,7 @@ Widget buttonLike(int like,IconData fontIcons) {
   return Padding(
     padding:  EdgeInsets.only(left: 4.w),
     child: LikeButton(
-      size: 21.sp,
+      size: 6.4.w,
       circleColor:
        CircleColor(start: buttonLeft, end: buttonRight),
       bubblesColor:  BubblesColor(
@@ -20,7 +20,7 @@ Widget buttonLike(int like,IconData fontIcons) {
         return FaIcon(
           fontIcons,
           color: isLiked ? buttonLeft : iconColor,
-          size: 18.sp,
+          size: 6.w,
         );
       },
       likeCount: like,

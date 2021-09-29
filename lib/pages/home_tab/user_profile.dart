@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Icon(
                         Icons.more_horiz,
                         color: buttonLeft,
-                        size: 21.sp,
+                        size: 6.4.w,
                       ),
                       onPressed: () {
                         Navigator.push(
@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       EdgeInsets.symmetric(horizontal: 2.66.w, vertical: 1.h),
                   child: Container(
                     width: 100.w,
-                    height: 66.h,
+                    height: 68.h,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5.33.w)),
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            profile("assets/badboy.jpg", 28.w, 14.h, 30),
+                            profile("assets/badboy.jpg", 28.w, 15.68.h, 15.68.h),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -122,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Icon(
                                 Icons.location_on,
                                 color: bodyDateColor,
-                                size: 13.sp,
+                                size: 3.9.w,
                               ),
                               SizedBox(
                                 width: 1.w,
